@@ -14,7 +14,7 @@ source=accounts
   | fields firstname, lastname
 ```
 
-## Request for Comments [RFC](https://github.com/opendistro-for-elasticsearch/sql/blob/develop/docs/experiment/ppl/RFC_%20Pipe%20Processing%20Language.pdf)
+## [Request for Comments (RFC)](https://github.com/opendistro-for-elasticsearch/sql/blob/develop/docs/experiment/ppl/RFC_%20Pipe%20Processing%20Language.pdf)
 Please add your feature requests here [New Requests](https://github.com/opendistro-for-elasticsearch/sql/issues) and view project progress [here](https://github.com/orgs/opendistro-for-elasticsearch/projects).
 
 ## License
