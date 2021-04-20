@@ -1,4 +1,4 @@
-## Pipe Processing Language
+## Piped Processing Language
 
 Piped Processing Language (PPL), powered by OpenSearch, enables OpenSearch users with exploration and discovery of, and finding search patterns in data stored in OpenSearch, using a set of commands delimited by pipes (|). These are essentially read-only requests to process data and return results.
 
