@@ -14,8 +14,12 @@ source=accounts
   | fields firstname, lastname
 ```
 
-## [Request for Comments (RFC)](https://github.com/opensearch-project/pipe-processing-language/blob/main/docs/rfc/RFC_%20Analysis%20semi-structured%20data%20with%20Pipe%20Processing%20Language.pdf)
-Please add your feature requests here [New Requests](https://github.com/opensearch-project/pipe-processing-language/issues) and view project progress [here](https://github.com/orgs/opensearch-project/projects).
+## [Request for Comments (RFC)](https://github.com/dai-chen/piped-processing-language/blob/main/docs/rfc/RFC_%20Analysis%20semi-structured%20data%20with%20Piped%20Processing%20Language.pdf)
+Please add your feature requests here [New Requests](https://github.com/opensearch-project/piped-processing-language/issues) and view project progress [here](https://github.com/orgs/opensearch-project/projects).
+
+## Contributing
+
+To report any issue or contribute code, please submit your issue or pull request in [opensearch-sql](https://github.com/opensearch-project/sql) repository. For now, this repository is only for RFC and specification for Piped Processing Language. Please find more details in [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 ## License
 
