@@ -1,0 +1,50 @@
+{
+  "data": {
+    "documents": [
+      {
+        "col_necessary": -75135118
+      },
+      {
+        "col_necessary": 865628851
+      },
+      {
+        "col_necessary": -1547947654
+      },
+      {
+        "col_necessary": -377899979
+      },
+      {
+        "col_necessary": -605328734
+      },
+      {
+        "col_necessary": -1011034580
+      },
+      {
+        "col_necessary": 1816700349
+      },
+      {
+        "col_necessary": 1640812135
+      },
+      {
+        "col_necessary": 2073623407
+      },
+      {
+        "col_necessary": -1906500567
+      }
+    ],
+    "mapping": {
+      "col_necessary": "integer"
+    }
+  },
+  "query": {
+    "language": "ppl",
+    "query": "source = $INDEX | eval result = sec_to_time(col_necessary) | fields result",
+    "tags": [
+      "command:source",
+      "command:eval",
+      "command:fields",
+      "function:sec_to_time",
+      "operator:equals"
+    ]
+  }
+}

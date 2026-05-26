@@ -1,0 +1,61 @@
+{
+  "data": {
+    "documents": [
+      {
+        "col_four": -1203715269,
+        "col_make": 926495969
+      },
+      {
+        "col_four": -2108567030,
+        "col_make": 934585347
+      },
+      {
+        "col_four": -2048841897,
+        "col_make": 1405554262
+      },
+      {
+        "col_four": -1128577246,
+        "col_make": 476968965
+      },
+      {
+        "col_four": 1026013520,
+        "col_make": -1305546784
+      },
+      {
+        "col_four": 1744913717,
+        "col_make": -1937042030
+      },
+      {
+        "col_four": 1397587911,
+        "col_make": -979783057
+      },
+      {
+        "col_four": 1683915201,
+        "col_make": 488181982
+      },
+      {
+        "col_four": -201375101,
+        "col_make": -369065977
+      },
+      {
+        "col_four": -1618361693,
+        "col_make": 723877350
+      }
+    ],
+    "mapping": {
+      "col_four": "integer",
+      "col_make": "integer"
+    }
+  },
+  "query": {
+    "language": "ppl",
+    "query": "source = $INDEX | eval result = period_diff(col_four, col_make) | fields result",
+    "tags": [
+      "command:source",
+      "command:eval",
+      "command:fields",
+      "function:period_diff",
+      "operator:equals"
+    ]
+  }
+}

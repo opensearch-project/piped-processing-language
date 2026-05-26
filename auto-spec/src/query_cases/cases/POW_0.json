@@ -1,0 +1,61 @@
+{
+  "data": {
+    "documents": [
+      {
+        "col_do": -950696924,
+        "col_white": 718471071
+      },
+      {
+        "col_do": 172229590,
+        "col_white": 2077209550
+      },
+      {
+        "col_do": 1788135872,
+        "col_white": -1134821002
+      },
+      {
+        "col_do": -789219669,
+        "col_white": -693673886
+      },
+      {
+        "col_do": 1602017425,
+        "col_white": 451012879
+      },
+      {
+        "col_do": -429964217,
+        "col_white": -1224482358
+      },
+      {
+        "col_do": -1277461516,
+        "col_white": 407380250
+      },
+      {
+        "col_do": -1666301094,
+        "col_white": 1584627048
+      },
+      {
+        "col_do": 240390918,
+        "col_white": -970937556
+      },
+      {
+        "col_do": -1875887917,
+        "col_white": -487548035
+      }
+    ],
+    "mapping": {
+      "col_do": "integer",
+      "col_white": "integer"
+    }
+  },
+  "query": {
+    "language": "ppl",
+    "query": "source = $INDEX | eval result = pow(col_do, col_white) | fields result",
+    "tags": [
+      "command:source",
+      "command:eval",
+      "command:fields",
+      "function:pow",
+      "operator:equals"
+    ]
+  }
+}

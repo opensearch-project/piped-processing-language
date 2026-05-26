@@ -1,0 +1,61 @@
+{
+  "data": {
+    "documents": [
+      {
+        "col_a": 1514274014,
+        "col_skin": 1642061598
+      },
+      {
+        "col_a": 1434148597,
+        "col_skin": 1893638880
+      },
+      {
+        "col_a": 1722883728,
+        "col_skin": 850928714
+      },
+      {
+        "col_a": -1717421287,
+        "col_skin": 954370224
+      },
+      {
+        "col_a": 815557834,
+        "col_skin": 1184079573
+      },
+      {
+        "col_a": 1828079944,
+        "col_skin": -1844255335
+      },
+      {
+        "col_a": -1193868789,
+        "col_skin": 1332479206
+      },
+      {
+        "col_a": 1410212165,
+        "col_skin": -149521387
+      },
+      {
+        "col_a": -1524734947,
+        "col_skin": 290990854
+      },
+      {
+        "col_a": -2114006426,
+        "col_skin": 955380598
+      }
+    ],
+    "mapping": {
+      "col_a": "integer",
+      "col_skin": "integer"
+    }
+  },
+  "query": {
+    "language": "ppl",
+    "query": "source = $INDEX | eval result = makedate(col_a, col_skin) | fields result",
+    "tags": [
+      "command:source",
+      "command:eval",
+      "command:fields",
+      "function:makedate",
+      "operator:equals"
+    ]
+  }
+}

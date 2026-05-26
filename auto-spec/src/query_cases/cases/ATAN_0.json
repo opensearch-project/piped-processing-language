@@ -1,0 +1,50 @@
+{
+  "data": {
+    "documents": [
+      {
+        "col_high": -500466666
+      },
+      {
+        "col_high": 1987580583
+      },
+      {
+        "col_high": 634531938
+      },
+      {
+        "col_high": 1322021033
+      },
+      {
+        "col_high": 628915707
+      },
+      {
+        "col_high": 1161397340
+      },
+      {
+        "col_high": -1306946424
+      },
+      {
+        "col_high": -287954342
+      },
+      {
+        "col_high": 146294014
+      },
+      {
+        "col_high": -1362375199
+      }
+    ],
+    "mapping": {
+      "col_high": "integer"
+    }
+  },
+  "query": {
+    "language": "ppl",
+    "query": "source = $INDEX | eval result = atan(col_high) | fields result",
+    "tags": [
+      "command:source",
+      "command:eval",
+      "command:fields",
+      "function:atan",
+      "operator:equals"
+    ]
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "data": {
+    "documents": [
+      {
+        "col_clear": 1113302776
+      },
+      {
+        "col_clear": 440979090
+      },
+      {
+        "col_clear": -1724450208
+      },
+      {
+        "col_clear": -1374091717
+      },
+      {
+        "col_clear": 2127944149
+      },
+      {
+        "col_clear": 1463973566
+      },
+      {
+        "col_clear": 1773091300
+      },
+      {
+        "col_clear": 652895049
+      },
+      {
+        "col_clear": 180167872
+      },
+      {
+        "col_clear": -1041867425
+      }
+    ],
+    "mapping": {
+      "col_clear": "integer"
+    }
+  },
+  "query": {
+    "language": "ppl",
+    "query": "source = $INDEX | eval result = sin(col_clear) | fields result",
+    "tags": [
+      "command:source",
+      "command:eval",
+      "command:fields",
+      "function:sin",
+      "operator:equals"
+    ]
+  }
+}

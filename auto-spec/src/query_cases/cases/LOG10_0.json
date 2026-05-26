@@ -1,0 +1,50 @@
+{
+  "data": {
+    "documents": [
+      {
+        "col_even": 703074111
+      },
+      {
+        "col_even": -327668056
+      },
+      {
+        "col_even": -286751141
+      },
+      {
+        "col_even": 417182793
+      },
+      {
+        "col_even": 1740875025
+      },
+      {
+        "col_even": -1330688620
+      },
+      {
+        "col_even": -1517632943
+      },
+      {
+        "col_even": 1181959128
+      },
+      {
+        "col_even": -1781369319
+      },
+      {
+        "col_even": 707786167
+      }
+    ],
+    "mapping": {
+      "col_even": "integer"
+    }
+  },
+  "query": {
+    "language": "ppl",
+    "query": "source = $INDEX | eval result = log10(col_even) | fields result",
+    "tags": [
+      "command:source",
+      "command:eval",
+      "command:fields",
+      "function:log10",
+      "operator:equals"
+    ]
+  }
+}

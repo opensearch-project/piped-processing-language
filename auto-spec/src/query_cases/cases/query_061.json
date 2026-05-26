@@ -1,0 +1,97 @@
+{
+  "data": {
+    "documents": [
+      {
+        "int_col": 30,
+        "struct_col": {
+          "field1": {
+            "subfield": "value1"
+          },
+          "field2": 123
+        },
+        "struct_col2": {
+          "field1": {
+            "subfield": "valueA"
+          },
+          "field2": 23
+        }
+      },
+      {
+        "int_col": 40,
+        "struct_col": {
+          "field1": {
+            "subfield": "value5"
+          },
+          "field2": 123
+        },
+        "struct_col2": {
+          "field1": {
+            "subfield": "valueB"
+          },
+          "field2": 33
+        }
+      },
+      {
+        "int_col": 30,
+        "struct_col": {
+          "field1": {
+            "subfield": "value4"
+          },
+          "field2": 823
+        },
+        "struct_col2": {
+          "field1": {
+            "subfield": "valueC"
+          },
+          "field2": 83
+        }
+      },
+      {
+        "int_col": 40,
+        "struct_col": {
+          "field1": {
+            "subfield": "value2"
+          },
+          "field2": 456
+        },
+        "struct_col2": {
+          "field1": {
+            "subfield": "valueD"
+          },
+          "field2": 46
+        }
+      },
+      {
+        "int_col": 50,
+        "struct_col": {
+          "field1": {
+            "subfield": "value3"
+          },
+          "field2": 789
+        },
+        "struct_col2": {
+          "field1": {
+            "subfield": "valueE"
+          },
+          "field2": 89
+        }
+      }
+    ],
+    "mapping": {
+      "int_col": "integer",
+      "struct_col": "object",
+      "struct_col2": "object"
+    }
+  },
+  "query": {
+    "language": "ppl",
+    "query": "source = $INDEX | stats avg(int_col) as avg_int by struct_col.field2, struct_col2.field2 | eval new_col = avg_int | stats avg(avg_int) as avg_avg_int by new_col",
+    "tags": [
+      "command:source",
+      "command:stats",
+      "command:eval",
+      "function:avg",
+      "operator:equals"
+    ]
+  }
+}

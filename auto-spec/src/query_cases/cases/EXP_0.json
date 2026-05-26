@@ -1,0 +1,50 @@
+{
+  "data": {
+    "documents": [
+      {
+        "col_choose": 373446188
+      },
+      {
+        "col_choose": 1308448401
+      },
+      {
+        "col_choose": -1026295314
+      },
+      {
+        "col_choose": -1609444220
+      },
+      {
+        "col_choose": -408992410
+      },
+      {
+        "col_choose": 1615632025
+      },
+      {
+        "col_choose": 2006982525
+      },
+      {
+        "col_choose": 686214356
+      },
+      {
+        "col_choose": 1699224316
+      },
+      {
+        "col_choose": -823564820
+      }
+    ],
+    "mapping": {
+      "col_choose": "integer"
+    }
+  },
+  "query": {
+    "language": "ppl",
+    "query": "source = $INDEX | eval result = exp(col_choose) | fields result",
+    "tags": [
+      "command:source",
+      "command:eval",
+      "command:fields",
+      "function:exp",
+      "operator:equals"
+    ]
+  }
+}

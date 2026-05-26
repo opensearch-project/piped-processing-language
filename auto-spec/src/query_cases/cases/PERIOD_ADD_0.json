@@ -1,0 +1,61 @@
+{
+  "data": {
+    "documents": [
+      {
+        "col_science": -825546290,
+        "col_section": 935290454
+      },
+      {
+        "col_science": -290185089,
+        "col_section": -1564736970
+      },
+      {
+        "col_science": -49314181,
+        "col_section": 950049678
+      },
+      {
+        "col_science": 641124251,
+        "col_section": -1334065082
+      },
+      {
+        "col_science": -1177114220,
+        "col_section": -170190219
+      },
+      {
+        "col_science": -1550205881,
+        "col_section": 1999121518
+      },
+      {
+        "col_science": 1444542770,
+        "col_section": 369434550
+      },
+      {
+        "col_science": 2053099397,
+        "col_section": 277211636
+      },
+      {
+        "col_science": -54744614,
+        "col_section": -987896349
+      },
+      {
+        "col_science": -2053931360,
+        "col_section": -907081871
+      }
+    ],
+    "mapping": {
+      "col_science": "integer",
+      "col_section": "integer"
+    }
+  },
+  "query": {
+    "language": "ppl",
+    "query": "source = $INDEX | eval result = period_add(col_section, col_science) | fields result",
+    "tags": [
+      "command:source",
+      "command:eval",
+      "command:fields",
+      "function:period_add",
+      "operator:equals"
+    ]
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "data": {
+    "documents": [
+      {
+        "col_professor": 721999910,
+        "col_them": -1384643577
+      },
+      {
+        "col_professor": 412453779,
+        "col_them": 1368553068
+      },
+      {
+        "col_professor": -317364289,
+        "col_them": -191595795
+      },
+      {
+        "col_professor": -1845000697,
+        "col_them": 1626022639
+      },
+      {
+        "col_professor": -1946411714,
+        "col_them": -910426957
+      },
+      {
+        "col_professor": -2035182849,
+        "col_them": -530555808
+      },
+      {
+        "col_professor": 2106805971,
+        "col_them": 566335098
+      },
+      {
+        "col_professor": -636813024,
+        "col_them": 693364338
+      },
+      {
+        "col_professor": -1462174857,
+        "col_them": 725663085
+      },
+      {
+        "col_professor": 1114185711,
+        "col_them": -2031436814
+      }
+    ],
+    "mapping": {
+      "col_professor": "integer",
+      "col_them": "integer"
+    }
+  },
+  "query": {
+    "language": "ppl",
+    "query": "source = $INDEX | eval result = log(col_them, col_professor) | fields result",
+    "tags": [
+      "command:source",
+      "command:eval",
+      "command:fields",
+      "function:log",
+      "operator:equals"
+    ]
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "data": {
+    "documents": [
+      {
+        "col_board": 823755184
+      },
+      {
+        "col_board": -1175658222
+      },
+      {
+        "col_board": -908505464
+      },
+      {
+        "col_board": -1053319129
+      },
+      {
+        "col_board": 1112077668
+      },
+      {
+        "col_board": -1298053755
+      },
+      {
+        "col_board": 426164233
+      },
+      {
+        "col_board": 1298986118
+      },
+      {
+        "col_board": -2047489252
+      },
+      {
+        "col_board": 1827215690
+      }
+    ],
+    "mapping": {
+      "col_board": "integer"
+    }
+  },
+  "query": {
+    "language": "ppl",
+    "query": "source = $INDEX | eval result = acos(col_board) | fields result",
+    "tags": [
+      "command:source",
+      "command:eval",
+      "command:fields",
+      "function:acos",
+      "operator:equals"
+    ]
+  }
+}

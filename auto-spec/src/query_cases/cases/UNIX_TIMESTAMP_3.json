@@ -1,0 +1,50 @@
+{
+  "data": {
+    "documents": [
+      {
+        "col_no": -1232290611
+      },
+      {
+        "col_no": -972840902
+      },
+      {
+        "col_no": 327025599
+      },
+      {
+        "col_no": -490581756
+      },
+      {
+        "col_no": 299500233
+      },
+      {
+        "col_no": -260585685
+      },
+      {
+        "col_no": 608148454
+      },
+      {
+        "col_no": -797191401
+      },
+      {
+        "col_no": 309680875
+      },
+      {
+        "col_no": -1788751709
+      }
+    ],
+    "mapping": {
+      "col_no": "integer"
+    }
+  },
+  "query": {
+    "language": "ppl",
+    "query": "source = $INDEX | eval result = unix_timestamp(col_no) | fields result",
+    "tags": [
+      "command:source",
+      "command:eval",
+      "command:fields",
+      "function:unix_timestamp",
+      "operator:equals"
+    ]
+  }
+}

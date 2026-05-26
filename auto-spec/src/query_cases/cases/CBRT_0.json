@@ -1,0 +1,50 @@
+{
+  "data": {
+    "documents": [
+      {
+        "col_right": 272504541
+      },
+      {
+        "col_right": -354043122
+      },
+      {
+        "col_right": -1046559258
+      },
+      {
+        "col_right": 622578123
+      },
+      {
+        "col_right": 985664037
+      },
+      {
+        "col_right": -698291819
+      },
+      {
+        "col_right": -314110243
+      },
+      {
+        "col_right": 209068820
+      },
+      {
+        "col_right": -754730218
+      },
+      {
+        "col_right": 1475713568
+      }
+    ],
+    "mapping": {
+      "col_right": "integer"
+    }
+  },
+  "query": {
+    "language": "ppl",
+    "query": "source = $INDEX | eval result = cbrt(col_right) | fields result",
+    "tags": [
+      "command:source",
+      "command:eval",
+      "command:fields",
+      "function:cbrt",
+      "operator:equals"
+    ]
+  }
+}

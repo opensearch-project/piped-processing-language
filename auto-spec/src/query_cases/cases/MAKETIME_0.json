@@ -1,0 +1,72 @@
+{
+  "data": {
+    "documents": [
+      {
+        "col_agree": -601906179,
+        "col_design": 1321460511,
+        "col_spend": -1787700610
+      },
+      {
+        "col_agree": -2120851976,
+        "col_design": 1555269051,
+        "col_spend": 2056280499
+      },
+      {
+        "col_agree": -2001703559,
+        "col_design": -789186779,
+        "col_spend": 1085594317
+      },
+      {
+        "col_agree": -1743632770,
+        "col_design": -547096417,
+        "col_spend": 331159923
+      },
+      {
+        "col_agree": -1378367826,
+        "col_design": 51609967,
+        "col_spend": 868231991
+      },
+      {
+        "col_agree": -142776961,
+        "col_design": 1008224460,
+        "col_spend": -273285131
+      },
+      {
+        "col_agree": 270688708,
+        "col_design": 2043868036,
+        "col_spend": -1595881293
+      },
+      {
+        "col_agree": 986407642,
+        "col_design": 2021055065,
+        "col_spend": 1191851846
+      },
+      {
+        "col_agree": 382845402,
+        "col_design": -1162619080,
+        "col_spend": -368718889
+      },
+      {
+        "col_agree": 1621725579,
+        "col_design": -166025944,
+        "col_spend": -1347867256
+      }
+    ],
+    "mapping": {
+      "col_agree": "integer",
+      "col_design": "integer",
+      "col_spend": "integer"
+    }
+  },
+  "query": {
+    "language": "ppl",
+    "query": "source = $INDEX | eval result = maketime(col_spend, col_design, col_agree) | fields result",
+    "tags": [
+      "command:source",
+      "command:eval",
+      "command:fields",
+      "function:maketime",
+      "operator:equals"
+    ]
+  }
+}

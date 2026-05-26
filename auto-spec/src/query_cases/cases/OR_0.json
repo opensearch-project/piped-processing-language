@@ -1,0 +1,61 @@
+{
+  "data": {
+    "documents": [
+      {
+        "col_huge": false,
+        "col_within": false
+      },
+      {
+        "col_huge": false,
+        "col_within": true
+      },
+      {
+        "col_huge": true,
+        "col_within": false
+      },
+      {
+        "col_huge": false,
+        "col_within": true
+      },
+      {
+        "col_huge": false,
+        "col_within": true
+      },
+      {
+        "col_huge": false,
+        "col_within": true
+      },
+      {
+        "col_huge": false,
+        "col_within": true
+      },
+      {
+        "col_huge": true,
+        "col_within": false
+      },
+      {
+        "col_huge": true,
+        "col_within": false
+      },
+      {
+        "col_huge": true,
+        "col_within": true
+      }
+    ],
+    "mapping": {
+      "col_huge": "boolean",
+      "col_within": "boolean"
+    }
+  },
+  "query": {
+    "language": "ppl",
+    "query": "source = $INDEX | eval result = (col_huge OR col_within) | fields result",
+    "tags": [
+      "command:source",
+      "command:eval",
+      "command:fields",
+      "operator:equals",
+      "operator:or"
+    ]
+  }
+}

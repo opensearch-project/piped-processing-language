@@ -1,0 +1,50 @@
+{
+  "data": {
+    "documents": [
+      {
+        "col_wife": -444183421
+      },
+      {
+        "col_wife": 1969217710
+      },
+      {
+        "col_wife": -1884539962
+      },
+      {
+        "col_wife": -2075505012
+      },
+      {
+        "col_wife": -1415722320
+      },
+      {
+        "col_wife": 1064893655
+      },
+      {
+        "col_wife": -207196938
+      },
+      {
+        "col_wife": -1027908926
+      },
+      {
+        "col_wife": -1809651357
+      },
+      {
+        "col_wife": -1865825802
+      }
+    ],
+    "mapping": {
+      "col_wife": "integer"
+    }
+  },
+  "query": {
+    "language": "ppl",
+    "query": "source = $INDEX | eval result = asin(col_wife) | fields result",
+    "tags": [
+      "command:source",
+      "command:eval",
+      "command:fields",
+      "function:asin",
+      "operator:equals"
+    ]
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "query_018.json": {
+    "add": ["operator:and", "operator:or"],
+    "reason": "Has 'AND' and 'OR' operators in the where clause"
+  },
+  "query_021.json": {
+    "add": ["operator:and", "operator:or"],
+    "reason": "Has 'AND' and 'OR' operators in the condition"
+  },
+  "query_182.json": {
+    "add": ["operator:and"],
+    "reason": "Has implicit AND in the where clause conditions"
+  },
+  "query_190.json": {
+    "add": ["operator:and"],
+    "reason": "Has multiple conditions joined by implicit AND"
+  },
+  "tpch_002.json": {
+    "add": ["operator:and"],
+    "reason": "Has multiple conditions with AND"
+  },
+  "tpch_006.json": {
+    "add": ["operator:and"],
+    "reason": "Has multiple conditions in where clause"
+  },
+  "tpch_012.json": {
+    "add": ["operator:and"],
+    "reason": "Multiple conditions with AND"
+  },
+  "tpch_019.json": {
+    "add": ["command:subquery"],
+    "reason": "Contains nested query logic"
+  },
+  "tpch_020.json": {
+    "add": ["operator:and"],
+    "reason": "Has multiple conditions joined by AND"
+  },
+  "query_180.json": {
+    "add": ["operator:and"],
+    "reason": "Has multiple join conditions with AND"
+  },
+  "query_183.json": {
+    "add": ["operator:and"],
+    "reason": "Has multiple conditions in where clause"
+  },
+  "query_184.json": {
+    "add": ["operator:and"],
+    "reason": "Has multiple conditions in where clause"
+  },
+  "query_185.json": {
+    "add": ["operator:and"],
+    "reason": "Has multiple join and where conditions"
+  },
+  "query_197.json": {
+    "add": ["command:where"],
+    "reason": "Has where conditions but missing command tag"
+  },
+  "query_198.json": {
+    "add": ["operator:and"],
+    "reason": "Has multiple conditions in subquery"
+  },
+  "query_199.json": {
+    "add": ["operator:and"],
+    "reason": "Has multiple conditions with AND"
+  }
+}

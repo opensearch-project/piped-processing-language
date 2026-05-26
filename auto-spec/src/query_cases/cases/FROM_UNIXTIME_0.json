@@ -1,0 +1,50 @@
+{
+  "data": {
+    "documents": [
+      {
+        "col_or": -418289965
+      },
+      {
+        "col_or": 763112339
+      },
+      {
+        "col_or": 713919642
+      },
+      {
+        "col_or": -1683236796
+      },
+      {
+        "col_or": 9309835
+      },
+      {
+        "col_or": -175903527
+      },
+      {
+        "col_or": 1764938834
+      },
+      {
+        "col_or": -1623172846
+      },
+      {
+        "col_or": 1911769625
+      },
+      {
+        "col_or": 205289107
+      }
+    ],
+    "mapping": {
+      "col_or": "integer"
+    }
+  },
+  "query": {
+    "language": "ppl",
+    "query": "source = $INDEX | eval result = from_unixtime(col_or) | fields result",
+    "tags": [
+      "command:source",
+      "command:eval",
+      "command:fields",
+      "function:from_unixtime",
+      "operator:equals"
+    ]
+  }
+}

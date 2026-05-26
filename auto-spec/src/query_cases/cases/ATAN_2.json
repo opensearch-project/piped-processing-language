@@ -1,0 +1,61 @@
+{
+  "data": {
+    "documents": [
+      {
+        "col_ability": -1538839806,
+        "col_challenge": -1001979925
+      },
+      {
+        "col_ability": 1509051099,
+        "col_challenge": -1986710733
+      },
+      {
+        "col_ability": -677002993,
+        "col_challenge": -1432495629
+      },
+      {
+        "col_ability": -1745545310,
+        "col_challenge": 543970923
+      },
+      {
+        "col_ability": -558332330,
+        "col_challenge": 9786422
+      },
+      {
+        "col_ability": -2137847315,
+        "col_challenge": 620929629
+      },
+      {
+        "col_ability": 1862434797,
+        "col_challenge": 1327190065
+      },
+      {
+        "col_ability": 546670039,
+        "col_challenge": -407491883
+      },
+      {
+        "col_ability": -1253381488,
+        "col_challenge": -1991388547
+      },
+      {
+        "col_ability": -1430622741,
+        "col_challenge": -953934997
+      }
+    ],
+    "mapping": {
+      "col_ability": "integer",
+      "col_challenge": "integer"
+    }
+  },
+  "query": {
+    "language": "ppl",
+    "query": "source = $INDEX | eval result = atan(col_ability, col_challenge) | fields result",
+    "tags": [
+      "command:source",
+      "command:eval",
+      "command:fields",
+      "function:atan",
+      "operator:equals"
+    ]
+  }
+}

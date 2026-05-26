@@ -1,0 +1,86 @@
+{
+  "data": {
+    "documents": [
+      {
+        "@timestamp": "2023-10-01T10:00:00",
+        "clientip": "40.135.0.0",
+        "day": 1,
+        "month": 10,
+        "request": "GET /images/hm_bg.jpg HTTP/1.0",
+        "size": 24736,
+        "status": 200,
+        "year": 2023
+      },
+      {
+        "@timestamp": "2023-10-01T10:05:00",
+        "clientip": "232.0.0.0",
+        "day": 1,
+        "month": 10,
+        "request": "GET /images/hm_bg.jpg HTTP/1.0",
+        "size": 24736,
+        "status": 200,
+        "year": 2023
+      },
+      {
+        "@timestamp": "2023-10-01T10:10:00",
+        "clientip": "26.1.0.0",
+        "day": 1,
+        "month": 10,
+        "request": "GET /images/hm_bg.jpg HTTP/1.0",
+        "size": 24736,
+        "status": 200,
+        "year": 2023
+      },
+      {
+        "@timestamp": "2023-10-01T10:15:00",
+        "clientip": "247.37.0.0",
+        "day": 1,
+        "month": 10,
+        "request": "GET /french/splash_inet.html HTTP/1.0",
+        "size": 3781,
+        "status": 200,
+        "year": 2023
+      },
+      {
+        "@timestamp": "2023-10-01T10:20:00",
+        "clientip": "247.37.0.0",
+        "day": 1,
+        "month": 10,
+        "request": "GET /images/hm_nbg.jpg HTTP/1.0",
+        "size": 0,
+        "status": 304,
+        "year": 2023
+      },
+      {
+        "@timestamp": "2023-10-01T10:25:00",
+        "clientip": "252.0.0.0",
+        "day": 1,
+        "month": 10,
+        "request": "GET /images/hm_bg.jpg HTTP/1.0",
+        "size": 24736,
+        "status": 200,
+        "year": 2023
+      }
+    ],
+    "mapping": {
+      "@timestamp": "date",
+      "clientip": "ip",
+      "day": "integer",
+      "month": "integer",
+      "request": "text",
+      "size": "integer",
+      "status": "integer",
+      "year": "integer"
+    }
+  },
+  "query": {
+    "language": "ppl",
+    "query": "source = $INDEX | stats avg(size) by clientip",
+    "tags": [
+      "command:source",
+      "command:stats",
+      "function:avg",
+      "operator:equals"
+    ]
+  }
+}

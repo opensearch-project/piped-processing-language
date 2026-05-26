@@ -1,0 +1,2589 @@
+[
+  {
+    "name": "ADDDATE",
+    "str": "adddate",
+    "signatures": [
+      [
+        "date",
+        "any"
+      ],
+      [
+        "time",
+        "any"
+      ],
+      [
+        "timestamp",
+        "any"
+      ],
+      [
+        "date",
+        "integer"
+      ],
+      [
+        "time",
+        "integer"
+      ],
+      [
+        "timestamp",
+        "integer"
+      ],
+      [
+        "string",
+        "any"
+      ],
+      [
+        "string",
+        "integer"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "DAYOFYEAR",
+    "str": "dayofyear",
+    "signatures": [
+      [
+        "date"
+      ],
+      [
+        "time"
+      ],
+      [
+        "timestamp"
+      ],
+      [
+        "string"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "MINUTE_OF_DAY",
+    "str": "minute_of_day",
+    "signatures": [
+      [
+        "string"
+      ],
+      [
+        "time"
+      ],
+      [
+        "timestamp"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "LATEST",
+    "str": "latest",
+    "signatures": [
+      [
+        "string",
+        "timestamp"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "MODULUS",
+    "str": "%",
+    "signatures": [
+      [
+        "integer",
+        "integer"
+      ],
+      [
+        "integer",
+        "double"
+      ],
+      [
+        "double",
+        "integer"
+      ],
+      [
+        "double",
+        "double"
+      ]
+    ],
+    "inline": true
+  },
+  {
+    "name": "SUBTIME",
+    "str": "subtime",
+    "signatures": [
+      [
+        "string",
+        "string"
+      ],
+      [
+        "date",
+        "date"
+      ],
+      [
+        "date",
+        "time"
+      ],
+      [
+        "date",
+        "timestamp"
+      ],
+      [
+        "time",
+        "date"
+      ],
+      [
+        "time",
+        "time"
+      ],
+      [
+        "time",
+        "timestamp"
+      ],
+      [
+        "timestamp",
+        "date"
+      ],
+      [
+        "timestamp",
+        "time"
+      ],
+      [
+        "timestamp",
+        "timestamp"
+      ],
+      [
+        "date",
+        "string"
+      ],
+      [
+        "time",
+        "string"
+      ],
+      [
+        "timestamp",
+        "string"
+      ],
+      [
+        "string",
+        "date"
+      ],
+      [
+        "string",
+        "time"
+      ],
+      [
+        "string",
+        "timestamp"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "HOUR",
+    "str": "hour",
+    "signatures": [
+      [
+        "date"
+      ],
+      [
+        "time"
+      ],
+      [
+        "timestamp"
+      ],
+      [
+        "string"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "IS_BLANK",
+    "str": "isblank",
+    "signatures": [
+      [
+        "any"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "SEC_TO_TIME",
+    "str": "sec_to_time",
+    "signatures": [
+      [
+        "integer"
+      ],
+      [
+        "double"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "YEARWEEK",
+    "str": "yearweek",
+    "signatures": [
+      [
+        "date"
+      ],
+      [
+        "time"
+      ],
+      [
+        "timestamp"
+      ],
+      [
+        "string"
+      ],
+      [
+        "string",
+        "integer"
+      ],
+      [
+        "date",
+        "integer"
+      ],
+      [
+        "time",
+        "integer"
+      ],
+      [
+        "timestamp",
+        "integer"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "ABS",
+    "str": "abs",
+    "signatures": [
+      [
+        "integer"
+      ],
+      [
+        "double"
+      ],
+      [
+        "any"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "TIMESTAMPADD",
+    "str": "timestampadd",
+    "signatures": [
+      [
+        "string",
+        "integer",
+        "string"
+      ],
+      [
+        "string",
+        "integer",
+        "date"
+      ],
+      [
+        "string",
+        "integer",
+        "time"
+      ],
+      [
+        "string",
+        "integer",
+        "timestamp"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "COS",
+    "str": "cos",
+    "signatures": [
+      [
+        "integer"
+      ],
+      [
+        "double"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "TIME",
+    "str": "time",
+    "signatures": [
+      [
+        "date"
+      ],
+      [
+        "time"
+      ],
+      [
+        "timestamp"
+      ],
+      [
+        "string"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "TRIM",
+    "str": "trim",
+    "signatures": [
+      [
+        "string"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "MINUTE",
+    "str": "minute",
+    "signatures": [
+      [
+        "date"
+      ],
+      [
+        "time"
+      ],
+      [
+        "timestamp"
+      ],
+      [
+        "string"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "POW",
+    "str": "pow",
+    "signatures": [
+      [
+        "integer",
+        "integer"
+      ],
+      [
+        "integer",
+        "double"
+      ],
+      [
+        "double",
+        "integer"
+      ],
+      [
+        "double",
+        "double"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "ADDTIME",
+    "str": "addtime",
+    "signatures": [
+      [
+        "string",
+        "string"
+      ],
+      [
+        "date",
+        "date"
+      ],
+      [
+        "date",
+        "time"
+      ],
+      [
+        "date",
+        "timestamp"
+      ],
+      [
+        "time",
+        "date"
+      ],
+      [
+        "time",
+        "time"
+      ],
+      [
+        "time",
+        "timestamp"
+      ],
+      [
+        "timestamp",
+        "date"
+      ],
+      [
+        "timestamp",
+        "time"
+      ],
+      [
+        "timestamp",
+        "timestamp"
+      ],
+      [
+        "date",
+        "string"
+      ],
+      [
+        "time",
+        "string"
+      ],
+      [
+        "timestamp",
+        "string"
+      ],
+      [
+        "string",
+        "date"
+      ],
+      [
+        "string",
+        "time"
+      ],
+      [
+        "string",
+        "timestamp"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "CBRT",
+    "str": "cbrt",
+    "signatures": [
+      [
+        "integer"
+      ],
+      [
+        "double"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "UPPER",
+    "str": "upper",
+    "signatures": [
+      [
+        "string"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "FROM_DAYS",
+    "str": "from_days",
+    "signatures": [
+      [
+        "integer"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "SHA2",
+    "str": "sha2",
+    "signatures": [
+      [
+        "string",
+        "integer"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "INTERNAL_PATTERN_PARSER",
+    "str": "pattern_parser",
+    "signatures": [
+      [
+        "string",
+        "any"
+      ],
+      [
+        "string",
+        "string"
+      ],
+      [
+        "string",
+        "array"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "WEEKDAY",
+    "str": "weekday",
+    "signatures": [
+      [
+        "date"
+      ],
+      [
+        "time"
+      ],
+      [
+        "timestamp"
+      ],
+      [
+        "string"
+      ],
+      [
+        "date",
+        "integer"
+      ],
+      [
+        "time",
+        "integer"
+      ],
+      [
+        "timestamp",
+        "integer"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "DATE_SUB",
+    "str": "date_sub",
+    "signatures": [
+      [
+        "date",
+        "any"
+      ],
+      [
+        "time",
+        "any"
+      ],
+      [
+        "timestamp",
+        "any"
+      ],
+      [
+        "string",
+        "any"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "LOG",
+    "str": "log",
+    "signatures": [
+      [
+        "integer",
+        "integer"
+      ],
+      [
+        "integer",
+        "double"
+      ],
+      [
+        "double",
+        "integer"
+      ],
+      [
+        "double",
+        "double"
+      ],
+      [
+        "integer"
+      ],
+      [
+        "double"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "TIMEDIFF",
+    "str": "timediff",
+    "signatures": [
+      [
+        "string",
+        "string"
+      ],
+      [
+        "date",
+        "date"
+      ],
+      [
+        "date",
+        "time"
+      ],
+      [
+        "date",
+        "timestamp"
+      ],
+      [
+        "time",
+        "date"
+      ],
+      [
+        "time",
+        "time"
+      ],
+      [
+        "time",
+        "timestamp"
+      ],
+      [
+        "timestamp",
+        "date"
+      ],
+      [
+        "timestamp",
+        "time"
+      ],
+      [
+        "timestamp",
+        "timestamp"
+      ],
+      [
+        "date",
+        "string"
+      ],
+      [
+        "time",
+        "string"
+      ],
+      [
+        "timestamp",
+        "string"
+      ],
+      [
+        "string",
+        "date"
+      ],
+      [
+        "string",
+        "time"
+      ],
+      [
+        "string",
+        "timestamp"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "DAY",
+    "str": "day",
+    "signatures": [
+      [
+        "date"
+      ],
+      [
+        "time"
+      ],
+      [
+        "timestamp"
+      ],
+      [
+        "string"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "EXP",
+    "str": "exp",
+    "signatures": [
+      [
+        "integer"
+      ],
+      [
+        "double"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "MAKETIME",
+    "str": "maketime",
+    "signatures": [
+      [
+        "integer",
+        "integer",
+        "integer"
+      ],
+      [
+        "integer",
+        "integer",
+        "double"
+      ],
+      [
+        "integer",
+        "double",
+        "integer"
+      ],
+      [
+        "integer",
+        "double",
+        "double"
+      ],
+      [
+        "double",
+        "integer",
+        "integer"
+      ],
+      [
+        "double",
+        "integer",
+        "double"
+      ],
+      [
+        "double",
+        "double",
+        "integer"
+      ],
+      [
+        "double",
+        "double",
+        "double"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "SPAN",
+    "str": "span",
+    "signatures": [
+      [
+        "string",
+        "integer",
+        "string"
+      ],
+      [
+        "date",
+        "integer",
+        "string"
+      ],
+      [
+        "time",
+        "integer",
+        "string"
+      ],
+      [
+        "timestamp",
+        "integer",
+        "string"
+      ],
+      [
+        "integer",
+        "integer",
+        "any"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "ARRAY_LENGTH",
+    "str": "array_length",
+    "signatures": [
+      [
+        "array"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "MULTIPLY",
+    "str": "*",
+    "signatures": [
+      [
+        "integer",
+        "integer"
+      ],
+      [
+        "integer",
+        "double"
+      ],
+      [
+        "double",
+        "integer"
+      ],
+      [
+        "double",
+        "double"
+      ],
+      [
+        "any",
+        "integer"
+      ],
+      [
+        "any",
+        "double"
+      ],
+      [
+        "integer",
+        "any"
+      ],
+      [
+        "double",
+        "any"
+      ]
+    ],
+    "inline": true
+  },
+  {
+    "name": "DATE",
+    "str": "date",
+    "signatures": [
+      [
+        "date"
+      ],
+      [
+        "timestamp"
+      ],
+      [
+        "string"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "IS_PRESENT",
+    "str": "ispresent",
+    "signatures": [
+      [
+        "any"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "MODULUSFUNCTION",
+    "str": "modulus",
+    "signatures": [
+      [
+        "integer",
+        "integer"
+      ],
+      [
+        "integer",
+        "double"
+      ],
+      [
+        "double",
+        "integer"
+      ],
+      [
+        "double",
+        "double"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "DATEDIFF",
+    "str": "datediff",
+    "signatures": [
+      [
+        "string",
+        "string"
+      ],
+      [
+        "date",
+        "date"
+      ],
+      [
+        "date",
+        "time"
+      ],
+      [
+        "date",
+        "timestamp"
+      ],
+      [
+        "time",
+        "date"
+      ],
+      [
+        "time",
+        "time"
+      ],
+      [
+        "time",
+        "timestamp"
+      ],
+      [
+        "timestamp",
+        "date"
+      ],
+      [
+        "timestamp",
+        "time"
+      ],
+      [
+        "timestamp",
+        "timestamp"
+      ],
+      [
+        "date",
+        "string"
+      ],
+      [
+        "time",
+        "string"
+      ],
+      [
+        "timestamp",
+        "string"
+      ],
+      [
+        "string",
+        "date"
+      ],
+      [
+        "string",
+        "time"
+      ],
+      [
+        "string",
+        "timestamp"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "TIMESTAMP",
+    "str": "timestamp",
+    "signatures": [
+      [
+        "string"
+      ],
+      [
+        "date"
+      ],
+      [
+        "time"
+      ],
+      [
+        "timestamp"
+      ],
+      [
+        "string",
+        "string"
+      ],
+      [
+        "date",
+        "date"
+      ],
+      [
+        "date",
+        "time"
+      ],
+      [
+        "date",
+        "timestamp"
+      ],
+      [
+        "time",
+        "date"
+      ],
+      [
+        "time",
+        "time"
+      ],
+      [
+        "time",
+        "timestamp"
+      ],
+      [
+        "timestamp",
+        "date"
+      ],
+      [
+        "timestamp",
+        "time"
+      ],
+      [
+        "timestamp",
+        "timestamp"
+      ],
+      [
+        "string",
+        "date"
+      ],
+      [
+        "string",
+        "time"
+      ],
+      [
+        "string",
+        "timestamp"
+      ],
+      [
+        "date",
+        "string"
+      ],
+      [
+        "time",
+        "string"
+      ],
+      [
+        "timestamp",
+        "string"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "RTRIM",
+    "str": "rtrim",
+    "signatures": [
+      [
+        "string"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "SUBSTR",
+    "str": "substr",
+    "signatures": [
+      [
+        "string",
+        "integer"
+      ],
+      [
+        "string",
+        "integer",
+        "integer"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "POWER",
+    "str": "power",
+    "signatures": [
+      [
+        "integer",
+        "integer"
+      ],
+      [
+        "integer",
+        "double"
+      ],
+      [
+        "double",
+        "integer"
+      ],
+      [
+        "double",
+        "double"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "TYPEOF",
+    "str": "typeof",
+    "signatures": [
+      [
+        "any"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "HOUR_OF_DAY",
+    "str": "hour_of_day",
+    "signatures": [
+      [
+        "date"
+      ],
+      [
+        "time"
+      ],
+      [
+        "timestamp"
+      ],
+      [
+        "string"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "CRC32",
+    "str": "crc32",
+    "signatures": [
+      [
+        "string"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "DATETIME",
+    "str": "datetime",
+    "signatures": [
+      [
+        "timestamp",
+        "string"
+      ],
+      [
+        "string",
+        "string"
+      ],
+      [
+        "timestamp"
+      ],
+      [
+        "string"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "SUBDATE",
+    "str": "subdate",
+    "signatures": [
+      [
+        "date",
+        "any"
+      ],
+      [
+        "time",
+        "any"
+      ],
+      [
+        "timestamp",
+        "any"
+      ],
+      [
+        "date",
+        "integer"
+      ],
+      [
+        "time",
+        "integer"
+      ],
+      [
+        "timestamp",
+        "integer"
+      ],
+      [
+        "string",
+        "any"
+      ],
+      [
+        "string",
+        "integer"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "SUBSTRING",
+    "str": "substring",
+    "signatures": [
+      [
+        "string",
+        "integer"
+      ],
+      [
+        "string",
+        "integer",
+        "integer"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "TIMESTAMPDIFF",
+    "str": "timestampdiff",
+    "signatures": [
+      [
+        "string",
+        "date",
+        "date"
+      ],
+      [
+        "string",
+        "date",
+        "time"
+      ],
+      [
+        "string",
+        "date",
+        "timestamp"
+      ],
+      [
+        "string",
+        "time",
+        "date"
+      ],
+      [
+        "string",
+        "time",
+        "time"
+      ],
+      [
+        "string",
+        "time",
+        "timestamp"
+      ],
+      [
+        "string",
+        "timestamp",
+        "date"
+      ],
+      [
+        "string",
+        "timestamp",
+        "time"
+      ],
+      [
+        "string",
+        "timestamp",
+        "timestamp"
+      ],
+      [
+        "string",
+        "string",
+        "date"
+      ],
+      [
+        "string",
+        "string",
+        "time"
+      ],
+      [
+        "string",
+        "string",
+        "timestamp"
+      ],
+      [
+        "string",
+        "date",
+        "string"
+      ],
+      [
+        "string",
+        "time",
+        "string"
+      ],
+      [
+        "string",
+        "timestamp",
+        "string"
+      ],
+      [
+        "string",
+        "string",
+        "string"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "IS_NULL",
+    "str": "is null",
+    "signatures": [
+      [
+        "any"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "UNIX_TIMESTAMP",
+    "str": "unix_timestamp",
+    "signatures": [
+      [
+        "date"
+      ],
+      [
+        "time"
+      ],
+      [
+        "timestamp"
+      ],
+      [
+        "integer"
+      ],
+      [
+        "double"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "REPLACE",
+    "str": "replace",
+    "signatures": [
+      [
+        "string",
+        "string",
+        "string"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "MICROSECOND",
+    "str": "microsecond",
+    "signatures": [
+      [
+        "date"
+      ],
+      [
+        "time"
+      ],
+      [
+        "timestamp"
+      ],
+      [
+        "string"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "NOTEQUAL",
+    "str": "!=",
+    "signatures": [
+      [
+        "comparable_type",
+        "comparable_type"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "INTERNAL_GROK",
+    "str": "grok",
+    "signatures": [
+      [
+        "string",
+        "string"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "SYSDATE",
+    "str": "sysdate",
+    "signatures": [
+      [
+        "integer"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "TO_SECONDS",
+    "str": "to_seconds",
+    "signatures": [
+      [
+        "date"
+      ],
+      [
+        "time"
+      ],
+      [
+        "timestamp"
+      ],
+      [
+        "string"
+      ],
+      [
+        "integer"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "LOG2",
+    "str": "log2",
+    "signatures": [
+      [
+        "integer"
+      ],
+      [
+        "double"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "EXTRACT",
+    "str": "extract",
+    "signatures": [
+      [
+        "string",
+        "date"
+      ],
+      [
+        "string",
+        "time"
+      ],
+      [
+        "string",
+        "timestamp"
+      ],
+      [
+        "string",
+        "string"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "EQUAL",
+    "str": "=",
+    "signatures": [
+      [
+        "comparable_type",
+        "comparable_type"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "DAY_OF_WEEK",
+    "str": "day_of_week",
+    "signatures": [
+      [
+        "date"
+      ],
+      [
+        "time"
+      ],
+      [
+        "timestamp"
+      ],
+      [
+        "string"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "LOG10",
+    "str": "log10",
+    "signatures": [
+      [
+        "integer"
+      ],
+      [
+        "double"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "LTE",
+    "str": "<=",
+    "signatures": [
+      [
+        "comparable_type",
+        "comparable_type"
+      ]
+    ],
+    "inline": true
+  },
+  {
+    "name": "IF",
+    "str": "if",
+    "signatures": [
+      [
+        "boolean",
+        "any",
+        "any"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "MAKEDATE",
+    "str": "makedate",
+    "signatures": [
+      [
+        "integer",
+        "integer"
+      ],
+      [
+        "integer",
+        "double"
+      ],
+      [
+        "double",
+        "integer"
+      ],
+      [
+        "double",
+        "double"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "LENGTH",
+    "str": "length",
+    "signatures": [
+      [
+        "string"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "SIGN",
+    "str": "sign",
+    "signatures": [
+      [
+        "integer"
+      ],
+      [
+        "double"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "GET_FORMAT",
+    "str": "get_format",
+    "signatures": [
+      [
+        "string",
+        "string"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "DAYNAME",
+    "str": "dayname",
+    "signatures": [
+      [
+        "date"
+      ],
+      [
+        "timestamp"
+      ],
+      [
+        "string"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "NULLIF",
+    "str": "nullif",
+    "signatures": [
+      [
+        "comparable_type",
+        "comparable_type"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "INTERNAL_REGEXP_EXTRACT",
+    "str": "regexp_extract",
+    "signatures": [
+      [
+        "string",
+        "string"
+      ],
+      [
+        "string",
+        "string",
+        "integer"
+      ],
+      [
+        "string",
+        "string",
+        "integer",
+        "integer"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "DAY_OF_YEAR",
+    "str": "day_of_year",
+    "signatures": [
+      [
+        "date"
+      ],
+      [
+        "time"
+      ],
+      [
+        "timestamp"
+      ],
+      [
+        "string"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "SECOND",
+    "str": "second",
+    "signatures": [
+      [
+        "date"
+      ],
+      [
+        "time"
+      ],
+      [
+        "timestamp"
+      ],
+      [
+        "string"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "GTE",
+    "str": ">=",
+    "signatures": [
+      [
+        "comparable_type",
+        "comparable_type"
+      ]
+    ],
+    "inline": true
+  },
+  {
+    "name": "IS_NOT_NULL",
+    "str": "is not null",
+    "signatures": [
+      [
+        "any"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "DIVIDE",
+    "str": "/",
+    "signatures": [
+      [
+        "integer",
+        "integer"
+      ],
+      [
+        "integer",
+        "double"
+      ],
+      [
+        "double",
+        "integer"
+      ],
+      [
+        "double",
+        "double"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "CONVERT_TZ",
+    "str": "convert_tz",
+    "signatures": [
+      [
+        "string",
+        "string",
+        "string"
+      ],
+      [
+        "date",
+        "string",
+        "string"
+      ],
+      [
+        "time",
+        "string",
+        "string"
+      ],
+      [
+        "timestamp",
+        "string",
+        "string"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "TIME_TO_SEC",
+    "str": "time_to_sec",
+    "signatures": [
+      [
+        "date"
+      ],
+      [
+        "time"
+      ],
+      [
+        "timestamp"
+      ],
+      [
+        "string"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "LN",
+    "str": "ln",
+    "signatures": [
+      [
+        "integer"
+      ],
+      [
+        "double"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "PERIOD_DIFF",
+    "str": "period_diff",
+    "signatures": [
+      [
+        "integer",
+        "integer"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "ASCII",
+    "str": "ascii",
+    "signatures": [
+      [
+        "string"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "AND",
+    "str": "and",
+    "signatures": [
+      [
+        "boolean",
+        "boolean"
+      ]
+    ],
+    "inline": true
+  },
+  {
+    "name": "JSON_VALID",
+    "str": "json_valid",
+    "signatures": [
+      [
+        "string"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "WEEKOFYEAR",
+    "str": "weekofyear",
+    "signatures": [
+      [
+        "date"
+      ],
+      [
+        "time"
+      ],
+      [
+        "timestamp"
+      ],
+      [
+        "string"
+      ],
+      [
+        "string",
+        "integer"
+      ],
+      [
+        "date",
+        "integer"
+      ],
+      [
+        "time",
+        "integer"
+      ],
+      [
+        "timestamp",
+        "integer"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "ATAN2",
+    "str": "atan2",
+    "signatures": [
+      [
+        "integer",
+        "integer"
+      ],
+      [
+        "integer",
+        "double"
+      ],
+      [
+        "double",
+        "integer"
+      ],
+      [
+        "double",
+        "double"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "LTRIM",
+    "str": "ltrim",
+    "signatures": [
+      [
+        "string"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "ASIN",
+    "str": "asin",
+    "signatures": [
+      [
+        "integer"
+      ],
+      [
+        "double"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "MOD",
+    "str": "mod",
+    "signatures": [
+      [
+        "integer",
+        "integer"
+      ],
+      [
+        "integer",
+        "double"
+      ],
+      [
+        "double",
+        "integer"
+      ],
+      [
+        "double",
+        "double"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "REVERSE",
+    "str": "reverse",
+    "signatures": [
+      [
+        "string"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "QUARTER",
+    "str": "quarter",
+    "signatures": [
+      [
+        "date"
+      ],
+      [
+        "time"
+      ],
+      [
+        "timestamp"
+      ],
+      [
+        "string"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "ACOS",
+    "str": "acos",
+    "signatures": [
+      [
+        "integer"
+      ],
+      [
+        "double"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "DATE_ADD",
+    "str": "date_add",
+    "signatures": [
+      [
+        "date",
+        "any"
+      ],
+      [
+        "time",
+        "any"
+      ],
+      [
+        "timestamp",
+        "any"
+      ],
+      [
+        "string",
+        "any"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "MONTH",
+    "str": "month",
+    "signatures": [
+      [
+        "date"
+      ],
+      [
+        "time"
+      ],
+      [
+        "timestamp"
+      ],
+      [
+        "string"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "LAST_DAY",
+    "str": "last_day",
+    "signatures": [
+      [
+        "date"
+      ],
+      [
+        "time"
+      ],
+      [
+        "timestamp"
+      ],
+      [
+        "string"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "COT",
+    "str": "cot",
+    "signatures": [
+      [
+        "integer"
+      ],
+      [
+        "double"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "MINUTE_OF_HOUR",
+    "str": "minute_of_hour",
+    "signatures": [
+      [
+        "date"
+      ],
+      [
+        "time"
+      ],
+      [
+        "timestamp"
+      ],
+      [
+        "string"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "NOT",
+    "str": "not",
+    "signatures": [
+      [
+        "boolean"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "SIN",
+    "str": "sin",
+    "signatures": [
+      [
+        "integer"
+      ],
+      [
+        "double"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "XOR",
+    "str": "xor",
+    "signatures": [
+      [
+        "boolean",
+        "boolean"
+      ]
+    ],
+    "inline": true
+  },
+  {
+    "name": "MONTH_OF_YEAR",
+    "str": "month_of_year",
+    "signatures": [
+      [
+        "date"
+      ],
+      [
+        "time"
+      ],
+      [
+        "timestamp"
+      ],
+      [
+        "string"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "YEAR",
+    "str": "year",
+    "signatures": [
+      [
+        "date"
+      ],
+      [
+        "time"
+      ],
+      [
+        "timestamp"
+      ],
+      [
+        "string"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "MONTHNAME",
+    "str": "monthname",
+    "signatures": [
+      [
+        "date"
+      ],
+      [
+        "timestamp"
+      ],
+      [
+        "string"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "CONV",
+    "str": "conv",
+    "signatures": [
+      [
+        "string",
+        "integer",
+        "integer"
+      ],
+      [
+        "integer",
+        "integer",
+        "integer"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "DAYOFWEEK",
+    "str": "dayofweek",
+    "signatures": [
+      [
+        "date"
+      ],
+      [
+        "time"
+      ],
+      [
+        "timestamp"
+      ],
+      [
+        "string"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "REGEXP",
+    "str": "regexp",
+    "signatures": [
+      [
+        "string",
+        "string"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "CIDRMATCH",
+    "str": "cidrmatch",
+    "signatures": [
+      [
+        "string",
+        "string"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "GREATER",
+    "str": ">",
+    "signatures": [
+      [
+        "comparable_type",
+        "comparable_type"
+      ]
+    ],
+    "inline": true
+  },
+  {
+    "name": "LESS",
+    "str": "<",
+    "signatures": [
+      [
+        "comparable_type",
+        "comparable_type"
+      ]
+    ],
+    "inline": true
+  },
+  {
+    "name": "INTERNAL_REGEXP_REPLACE_3",
+    "str": "regexp_replace_3",
+    "signatures": [
+      [
+        "string",
+        "string",
+        "string"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "STRCMP",
+    "str": "strcmp",
+    "signatures": [
+      [
+        "string",
+        "string"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "RAND",
+    "str": "rand",
+    "signatures": [
+      [
+        "integer"
+      ],
+      [
+        "double"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "FROM_UNIXTIME",
+    "str": "from_unixtime",
+    "signatures": [
+      [
+        "integer"
+      ],
+      [
+        "double"
+      ],
+      [
+        "integer",
+        "string"
+      ],
+      [
+        "double",
+        "string"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "WEEK",
+    "str": "week",
+    "signatures": [
+      [
+        "date"
+      ],
+      [
+        "time"
+      ],
+      [
+        "timestamp"
+      ],
+      [
+        "string"
+      ],
+      [
+        "string",
+        "integer"
+      ],
+      [
+        "date",
+        "integer"
+      ],
+      [
+        "time",
+        "integer"
+      ],
+      [
+        "timestamp",
+        "integer"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "LOWER",
+    "str": "lower",
+    "signatures": [
+      [
+        "string"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "ATAN",
+    "str": "atan",
+    "signatures": [
+      [
+        "integer"
+      ],
+      [
+        "double"
+      ],
+      [
+        "integer",
+        "integer"
+      ],
+      [
+        "integer",
+        "double"
+      ],
+      [
+        "double",
+        "integer"
+      ],
+      [
+        "double",
+        "double"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "WEEK_OF_YEAR",
+    "str": "week_of_year",
+    "signatures": [
+      [
+        "date"
+      ],
+      [
+        "time"
+      ],
+      [
+        "timestamp"
+      ],
+      [
+        "string"
+      ],
+      [
+        "string",
+        "integer"
+      ],
+      [
+        "date",
+        "integer"
+      ],
+      [
+        "time",
+        "integer"
+      ],
+      [
+        "timestamp",
+        "integer"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "PERIOD_ADD",
+    "str": "period_add",
+    "signatures": [
+      [
+        "integer",
+        "integer"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "INTERNAL_ITEM",
+    "str": "item",
+    "signatures": [
+      [
+        "array",
+        "integer"
+      ],
+      [
+        "struct",
+        "any"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "DATE_FORMAT",
+    "str": "date_format",
+    "signatures": [
+      [
+        "date",
+        "string"
+      ],
+      [
+        "time",
+        "string"
+      ],
+      [
+        "timestamp",
+        "string"
+      ],
+      [
+        "string",
+        "string"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "SQRT",
+    "str": "sqrt",
+    "signatures": [
+      [
+        "integer"
+      ],
+      [
+        "double"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "EARLIEST",
+    "str": "earliest",
+    "signatures": [
+      [
+        "string",
+        "timestamp"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "DAYOFMONTH",
+    "str": "dayofmonth",
+    "signatures": [
+      [
+        "date"
+      ],
+      [
+        "time"
+      ],
+      [
+        "timestamp"
+      ],
+      [
+        "string"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "DEGREES",
+    "str": "degrees",
+    "signatures": [
+      [
+        "integer"
+      ],
+      [
+        "double"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "SECOND_OF_MINUTE",
+    "str": "second_of_minute",
+    "signatures": [
+      [
+        "date"
+      ],
+      [
+        "time"
+      ],
+      [
+        "timestamp"
+      ],
+      [
+        "string"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "IS_EMPTY",
+    "str": "isempty",
+    "signatures": [
+      [
+        "any"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "STR_TO_DATE",
+    "str": "str_to_date",
+    "signatures": [
+      [
+        "string",
+        "string"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "DAY_OF_MONTH",
+    "str": "day_of_month",
+    "signatures": [
+      [
+        "date"
+      ],
+      [
+        "time"
+      ],
+      [
+        "timestamp"
+      ],
+      [
+        "string"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "TIME_FORMAT",
+    "str": "time_format",
+    "signatures": [
+      [
+        "date",
+        "string"
+      ],
+      [
+        "time",
+        "string"
+      ],
+      [
+        "timestamp",
+        "string"
+      ],
+      [
+        "string",
+        "string"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "JSON_ARRAY_LENGTH",
+    "str": "json_array_length",
+    "signatures": [
+      [
+        "string"
+      ]
+    ],
+    "inline": false
+  },
+  {
+    "name": "OR",
+    "str": "or",
+    "signatures": [
+      [
+        "boolean",
+        "boolean"
+      ]
+    ],
+    "inline": true
+  },
+  {
+    "name": "RADIANS",
+    "str": "radians",
+    "signatures": [
+      [
+        "integer"
+      ],
+      [
+        "double"
+      ]
+    ],
+    "inline": false
+  }
+]

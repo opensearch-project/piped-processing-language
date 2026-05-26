@@ -1,0 +1,61 @@
+{
+  "data": {
+    "documents": [
+      {
+        "col_expect": -77359490,
+        "col_opportunity": 461548371
+      },
+      {
+        "col_expect": 1552424043,
+        "col_opportunity": 1370516711
+      },
+      {
+        "col_expect": 1737344670,
+        "col_opportunity": 1546736946
+      },
+      {
+        "col_expect": -940823188,
+        "col_opportunity": 963001325
+      },
+      {
+        "col_expect": 307527791,
+        "col_opportunity": 1042887814
+      },
+      {
+        "col_expect": -2044118246,
+        "col_opportunity": -1855754677
+      },
+      {
+        "col_expect": -358698638,
+        "col_opportunity": -1595016243
+      },
+      {
+        "col_expect": -864419531,
+        "col_opportunity": -1248734573
+      },
+      {
+        "col_expect": -1559925744,
+        "col_opportunity": 301683740
+      },
+      {
+        "col_expect": -598846186,
+        "col_opportunity": -5917097
+      }
+    ],
+    "mapping": {
+      "col_expect": "integer",
+      "col_opportunity": "integer"
+    }
+  },
+  "query": {
+    "language": "ppl",
+    "query": "source = $INDEX | eval result = atan2(col_expect, col_opportunity) | fields result",
+    "tags": [
+      "command:source",
+      "command:eval",
+      "command:fields",
+      "function:atan2",
+      "operator:equals"
+    ]
+  }
+}

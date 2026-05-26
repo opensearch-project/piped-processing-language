@@ -1,0 +1,149 @@
+{
+  "data": {
+    "documents": [
+      {
+        "p_brand": "Brand#13",
+        "p_comment": "ly. slyly ironi",
+        "p_container": "JUMBO PKG",
+        "p_mfgr": "Manufacturer#1",
+        "p_name": "goldenrod lavender spring chocolate lace",
+        "p_partkey": 1,
+        "p_retailprice": 901.0,
+        "p_size": 7,
+        "p_type": "PROMO BURNISHED COPPER"
+      },
+      {
+        "p_brand": "Brand#13",
+        "p_comment": "lar accounts amo",
+        "p_container": "LG CASE",
+        "p_mfgr": "Manufacturer#1",
+        "p_name": "blush thistle blue yellow saddle",
+        "p_partkey": 2,
+        "p_retailprice": 902.0,
+        "p_size": 1,
+        "p_type": "LARGE BRUSHED BRASS"
+      },
+      {
+        "p_brand": "Brand#42",
+        "p_comment": "egular deposits hag",
+        "p_container": "WRAP CASE",
+        "p_mfgr": "Manufacturer#4",
+        "p_name": "spring green yellow purple cornsilk",
+        "p_partkey": 3,
+        "p_retailprice": 903.0,
+        "p_size": 21,
+        "p_type": "STANDARD POLISHED BRASS"
+      },
+      {
+        "p_brand": "Brand#34",
+        "p_comment": "p furiously r",
+        "p_container": "MED DRUM",
+        "p_mfgr": "Manufacturer#3",
+        "p_name": "cornflower chocolate smoke green pink",
+        "p_partkey": 4,
+        "p_retailprice": 904.0,
+        "p_size": 14,
+        "p_type": "SMALL PLATED BRASS"
+      },
+      {
+        "p_brand": "Brand#32",
+        "p_comment": " wake carefully ",
+        "p_container": "SM PKG",
+        "p_mfgr": "Manufacturer#3",
+        "p_name": "forest brown coral puff cream",
+        "p_partkey": 5,
+        "p_retailprice": 905.0,
+        "p_size": 15,
+        "p_type": "STANDARD POLISHED TIN"
+      },
+      {
+        "p_brand": "Brand#24",
+        "p_comment": "sual a",
+        "p_container": "MED BAG",
+        "p_mfgr": "Manufacturer#2",
+        "p_name": "bisque cornflower lawn forest magenta",
+        "p_partkey": 6,
+        "p_retailprice": 906.0,
+        "p_size": 4,
+        "p_type": "PROMO PLATED STEEL"
+      },
+      {
+        "p_brand": "Brand#11",
+        "p_comment": "lyly. ex",
+        "p_container": "SM BAG",
+        "p_mfgr": "Manufacturer#1",
+        "p_name": "moccasin green thistle khaki floral",
+        "p_partkey": 7,
+        "p_retailprice": 907.0,
+        "p_size": 45,
+        "p_type": "SMALL PLATED COPPER"
+      },
+      {
+        "p_brand": "Brand#44",
+        "p_comment": "eposi",
+        "p_container": "LG DRUM",
+        "p_mfgr": "Manufacturer#4",
+        "p_name": "misty lace thistle snow royal",
+        "p_partkey": 8,
+        "p_retailprice": 908.0,
+        "p_size": 41,
+        "p_type": "PROMO BURNISHED TIN"
+      },
+      {
+        "p_brand": "Brand#43",
+        "p_comment": "ironic foxe",
+        "p_container": "WRAP CASE",
+        "p_mfgr": "Manufacturer#4",
+        "p_name": "thistle dim navajo dark gainsboro",
+        "p_partkey": 9,
+        "p_retailprice": 909.0,
+        "p_size": 12,
+        "p_type": "SMALL BURNISHED STEEL"
+      },
+      {
+        "p_brand": "Brand#54",
+        "p_comment": "ithely final deposit",
+        "p_container": "LG CAN",
+        "p_mfgr": "Manufacturer#5",
+        "p_name": "linen pink saddle puff powder",
+        "p_partkey": 10,
+        "p_retailprice": 910.01,
+        "p_size": 44,
+        "p_type": "LARGE BURNISHED STEEL"
+      }
+    ],
+    "mapping": {
+      "p_brand": "text",
+      "p_comment": "text",
+      "p_container": "text",
+      "p_mfgr": "text",
+      "p_name": "text",
+      "p_partkey": "integer",
+      "p_retailprice": "double",
+      "p_size": "integer",
+      "p_type": "text"
+    }
+  },
+  "query": {
+    "language": "ppl",
+    "query": "source = [ source = $INDEX | join ON p_partkey = l_partkey dev.default.lineitem | join ON s_suppkey = l_suppkey dev.default.supplier | join ON l_orderkey = o_orderkey dev.default.orders | join ON o_custkey = c_custkey dev.default.customer | join ON c_nationkey = n1.n_nationkey dev.default.nation as n1 | join ON s_nationkey = n2.n_nationkey dev.default.nation as n2 | join ON n1.n_regionkey = r_regionkey dev.default.region | where r_name = 'AMERICA' AND p_type = 'ECONOMY ANODIZED STEEL' and o_orderdate between date('1995-01-01') and date('1996-12-31') | eval o_year = year(o_orderdate) | eval volume = l_extendedprice * (1 - l_discount) | eval nation = n2.n_name | fields o_year, volume, nation ] as all_nations | stats sum(case(nation = 'BRAZIL', volume else 0)) as sum_case, sum(volume) as sum_volume by o_year | eval mkt_share = sum_case / sum_volume | fields mkt_share, o_year | sort o_year",
+    "tags": [
+      "command:source",
+      "command:join",
+      "command:where",
+      "command:eval",
+      "command:stats",
+      "command:sort",
+      "command:fields",
+      "function:year",
+      "function:date",
+      "function:case",
+      "operator:equals",
+      "operator:between",
+      "operator:multiply",
+      "operator:subtract",
+      "operator:divide",
+      "command:subquery"
+    ]
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "data": {
+    "documents": [
+      {
+        "col_impact": true,
+        "col_reason": false
+      },
+      {
+        "col_impact": false,
+        "col_reason": true
+      },
+      {
+        "col_impact": true,
+        "col_reason": true
+      },
+      {
+        "col_impact": false,
+        "col_reason": false
+      },
+      {
+        "col_impact": false,
+        "col_reason": true
+      },
+      {
+        "col_impact": true,
+        "col_reason": true
+      },
+      {
+        "col_impact": true,
+        "col_reason": false
+      },
+      {
+        "col_impact": false,
+        "col_reason": false
+      },
+      {
+        "col_impact": true,
+        "col_reason": true
+      },
+      {
+        "col_impact": true,
+        "col_reason": false
+      }
+    ],
+    "mapping": {
+      "col_impact": "boolean",
+      "col_reason": "boolean"
+    }
+  },
+  "query": {
+    "language": "ppl",
+    "query": "source = $INDEX | eval result = (col_reason XOR col_impact) | fields result",
+    "tags": [
+      "command:source",
+      "command:eval",
+      "command:fields",
+      "operator:equals",
+      "operator:xor"
+    ]
+  }
+}

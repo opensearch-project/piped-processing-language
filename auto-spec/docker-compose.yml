@@ -1,0 +1,36 @@
+services:
+  opensearch:
+    image: opensearchstaging/opensearch:3.1.0
+    container_name: opensearch
+    environment:
+      - cluster.name=opensearch-cluster
+      - node.name=opensearch
+      - discovery.seed_hosts=opensearch
+      - cluster.initial_cluster_manager_nodes=opensearch
+      - bootstrap.memory_lock=true
+      - "OPENSEARCH_JAVA_OPTS=-Xms4g -Xmx4g"
+      - "plugins.security.disabled=true"
+      # We disabled the security plugin, but OS won't bootstrap without a password. ¯\_(ツ)_/¯
+      - "OPENSEARCH_INITIAL_ADMIN_PASSWORD=7T$d7v^KL*T#L2JdNTV3"
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+      nofile:
+        soft: 65536
+        hard: 65536
+    ports:
+      - 9200:9200
+      - 9600:9600
+    expose:
+      - "9200"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9200/_cluster/health?wait_for_status=yellow", "-u", "admin:BugBash@123"]
+      interval: 1s
+      timeout: 1s
+      retries: 60
+    networks:
+      - opensearch-net
+
+networks:
+  opensearch-net:

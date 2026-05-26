@@ -1,0 +1,125 @@
+{
+  "data": {
+    "documents": [
+      {
+        "s_acctbal": 5755.94,
+        "s_address": " N kD4on9OM Ipw3,gf0JBoQDd7tgrzrddZ",
+        "s_comment": "each slyly above the careful",
+        "s_name": "Supplier#000000001",
+        "s_nationkey": 17,
+        "s_phone": "27-918-335-1736",
+        "s_suppkey": 1
+      },
+      {
+        "s_acctbal": 4032.68,
+        "s_address": "89eJ5ksX3ImxJQBvxObC,",
+        "s_comment": " slyly bold instructions. idle dependen",
+        "s_name": "Supplier#000000002",
+        "s_nationkey": 5,
+        "s_phone": "15-679-861-2259",
+        "s_suppkey": 2
+      },
+      {
+        "s_acctbal": 4192.4,
+        "s_address": "q1,G3Pj6OjIuUYfUoH18BFTKP5aU9bEV3",
+        "s_comment": "blithely silent requests after the express dependencies are sl",
+        "s_name": "Supplier#000000003",
+        "s_nationkey": 1,
+        "s_phone": "11-383-516-1199",
+        "s_suppkey": 3
+      },
+      {
+        "s_acctbal": 4641.08,
+        "s_address": "Bk7ah4CK8SYQTepEmvMkkgMwg",
+        "s_comment": "riously even requests above the exp",
+        "s_name": "Supplier#000000004",
+        "s_nationkey": 15,
+        "s_phone": "25-843-787-7479",
+        "s_suppkey": 4
+      },
+      {
+        "s_acctbal": -283.84,
+        "s_address": "Gcdm2rJRzl5qlTVzc",
+        "s_comment": ". slyly regular pinto bea",
+        "s_name": "Supplier#000000005",
+        "s_nationkey": 11,
+        "s_phone": "21-151-690-3663",
+        "s_suppkey": 5
+      },
+      {
+        "s_acctbal": 1365.79,
+        "s_address": "tQxuVm7s7CnK",
+        "s_comment": "final accounts. regular dolphins use against the furiously ironic decoys. ",
+        "s_name": "Supplier#000000006",
+        "s_nationkey": 14,
+        "s_phone": "24-696-997-4969",
+        "s_suppkey": 6
+      },
+      {
+        "s_acctbal": 6820.35,
+        "s_address": "s,4TicNGB4uO6PaSqNBUq",
+        "s_comment": "s unwind silently furiously regular courts. final requests are deposits. requests wake quietly blit",
+        "s_name": "Supplier#000000007",
+        "s_nationkey": 23,
+        "s_phone": "33-990-965-2201",
+        "s_suppkey": 7
+      },
+      {
+        "s_acctbal": 7627.85,
+        "s_address": "9Sq4bBH2FQEmaFOocY45sRTxo6yuoG",
+        "s_comment": "al pinto beans. asymptotes haggl",
+        "s_name": "Supplier#000000008",
+        "s_nationkey": 17,
+        "s_phone": "27-498-742-3860",
+        "s_suppkey": 8
+      },
+      {
+        "s_acctbal": 5302.37,
+        "s_address": "1KhUgZegwM3ua7dsYmekYBsK",
+        "s_comment": "s. unusual, even requests along the furiously regular pac",
+        "s_name": "Supplier#000000009",
+        "s_nationkey": 10,
+        "s_phone": "20-403-398-8662",
+        "s_suppkey": 9
+      },
+      {
+        "s_acctbal": 3891.91,
+        "s_address": "Saygah3gYWMp72i PY",
+        "s_comment": "ing waters. regular requests ar",
+        "s_name": "Supplier#000000010",
+        "s_nationkey": 24,
+        "s_phone": "34-852-489-8585",
+        "s_suppkey": 10
+      }
+    ],
+    "mapping": {
+      "s_acctbal": "double",
+      "s_address": "text",
+      "s_comment": "text",
+      "s_name": "text",
+      "s_nationkey": "integer",
+      "s_phone": "text",
+      "s_suppkey": "integer"
+    }
+  },
+  "query": {
+    "language": "ppl",
+    "query": "source = [    source = $INDEX    | join ON s_suppkey = l_suppkey lineitem    | join ON o_orderkey = l_orderkey orders    | join ON c_custkey = o_custkey customer    | join ON s_nationkey = n1.n_nationkey nation as n1    | join ON c_nationkey = n2.n_nationkey nation as n2    | where l_shipdate between date('1995-01-01') and date('1996-12-31')        and ((n1.n_name = 'FRANCE' and n2.n_name = 'GERMANY') or (n1.n_name = 'GERMANY' and n2.n_name = 'FRANCE'))    | eval supp_nation = n1.n_name, cust_nation = n2.n_name, l_year = year(l_shipdate), volume = l_extendedprice * (1 - l_discount)    | fields supp_nation, cust_nation, l_year, volume  ] as shipping| stats sum(volume) as revenue by supp_nation, cust_nation, l_year| sort supp_nation, cust_nation, l_year",
+    "tags": [
+      "command:source",
+      "command:join",
+      "command:where",
+      "command:stats",
+      "command:sort",
+      "command:eval",
+      "command:fields",
+      "function:between",
+      "function:date",
+      "function:year",
+      "operator:equals",
+      "operator:multiply",
+      "operator:subtract",
+      "command:subquery"
+    ]
+  }
+}

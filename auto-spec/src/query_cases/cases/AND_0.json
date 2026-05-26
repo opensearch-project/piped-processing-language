@@ -1,0 +1,61 @@
+{
+  "data": {
+    "documents": [
+      {
+        "col_explain": true,
+        "col_such": true
+      },
+      {
+        "col_explain": true,
+        "col_such": false
+      },
+      {
+        "col_explain": true,
+        "col_such": true
+      },
+      {
+        "col_explain": true,
+        "col_such": false
+      },
+      {
+        "col_explain": false,
+        "col_such": true
+      },
+      {
+        "col_explain": true,
+        "col_such": false
+      },
+      {
+        "col_explain": false,
+        "col_such": false
+      },
+      {
+        "col_explain": true,
+        "col_such": false
+      },
+      {
+        "col_explain": true,
+        "col_such": true
+      },
+      {
+        "col_explain": false,
+        "col_such": false
+      }
+    ],
+    "mapping": {
+      "col_explain": "boolean",
+      "col_such": "boolean"
+    }
+  },
+  "query": {
+    "language": "ppl",
+    "query": "source = $INDEX | eval result = (col_such AND col_explain) | fields result",
+    "tags": [
+      "command:source",
+      "command:eval",
+      "command:fields",
+      "operator:equals",
+      "operator:and"
+    ]
+  }
+}

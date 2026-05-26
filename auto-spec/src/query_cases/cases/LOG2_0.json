@@ -1,0 +1,50 @@
+{
+  "data": {
+    "documents": [
+      {
+        "col_manager": 277702529
+      },
+      {
+        "col_manager": 438419692
+      },
+      {
+        "col_manager": 1551877479
+      },
+      {
+        "col_manager": 1027875512
+      },
+      {
+        "col_manager": 2097902605
+      },
+      {
+        "col_manager": -1406744600
+      },
+      {
+        "col_manager": 217987243
+      },
+      {
+        "col_manager": -148244883
+      },
+      {
+        "col_manager": -1115420233
+      },
+      {
+        "col_manager": 1170401041
+      }
+    ],
+    "mapping": {
+      "col_manager": "integer"
+    }
+  },
+  "query": {
+    "language": "ppl",
+    "query": "source = $INDEX | eval result = log2(col_manager) | fields result",
+    "tags": [
+      "command:source",
+      "command:eval",
+      "command:fields",
+      "function:log2",
+      "operator:equals"
+    ]
+  }
+}

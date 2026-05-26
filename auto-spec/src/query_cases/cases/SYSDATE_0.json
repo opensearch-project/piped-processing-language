@@ -1,0 +1,50 @@
+{
+  "data": {
+    "documents": [
+      {
+        "col_value": -1380766520
+      },
+      {
+        "col_value": -1877384830
+      },
+      {
+        "col_value": -182754483
+      },
+      {
+        "col_value": -1691412230
+      },
+      {
+        "col_value": 621282879
+      },
+      {
+        "col_value": -1463250589
+      },
+      {
+        "col_value": 1172720937
+      },
+      {
+        "col_value": 669593753
+      },
+      {
+        "col_value": 1803158213
+      },
+      {
+        "col_value": 1684739126
+      }
+    ],
+    "mapping": {
+      "col_value": "integer"
+    }
+  },
+  "query": {
+    "language": "ppl",
+    "query": "source = $INDEX | eval result = sysdate(col_value) | fields result",
+    "tags": [
+      "command:source",
+      "command:eval",
+      "command:fields",
+      "function:sysdate",
+      "operator:equals"
+    ]
+  }
+}

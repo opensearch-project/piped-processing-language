@@ -1,0 +1,99 @@
+{
+  "data": {
+    "documents": [
+      {
+        "@timestamp": "2023-10-01T10:00:00",
+        "clientip": "40.135.0.0",
+        "day": 1,
+        "month": 10,
+        "request": "GET /images/hm_bg.jpg HTTP/1.0",
+        "size": 24736,
+        "status": 200,
+        "year": 2023
+      },
+      {
+        "@timestamp": "2023-10-01T10:05:00",
+        "clientip": "232.0.0.0",
+        "day": 1,
+        "month": 10,
+        "request": "GET /images/hm_bg.jpg HTTP/1.0",
+        "size": 24736,
+        "status": 200,
+        "year": 2023
+      },
+      {
+        "@timestamp": "2023-10-01T10:10:00",
+        "clientip": "26.1.0.0",
+        "day": 1,
+        "month": 10,
+        "request": "GET /images/hm_bg.jpg HTTP/1.0",
+        "size": 24736,
+        "status": 200,
+        "year": 2023
+      },
+      {
+        "@timestamp": "2023-10-01T10:15:00",
+        "clientip": "247.37.0.0",
+        "day": 1,
+        "month": 10,
+        "request": "GET /french/splash_inet.html HTTP/1.0",
+        "size": 3781,
+        "status": 200,
+        "year": 2023
+      },
+      {
+        "@timestamp": "2023-10-01T10:20:00",
+        "clientip": "247.37.0.0",
+        "day": 1,
+        "month": 10,
+        "request": "GET /images/hm_nbg.jpg HTTP/1.0",
+        "size": 0,
+        "status": 304,
+        "year": 2023
+      },
+      {
+        "@timestamp": "2023-10-01T10:25:00",
+        "clientip": "252.0.0.0",
+        "day": 1,
+        "month": 10,
+        "request": "GET /images/hm_bg.jpg HTTP/1.0",
+        "size": 24736,
+        "status": 200,
+        "year": 2023
+      }
+    ],
+    "mapping": {
+      "@timestamp": "date",
+      "clientip": "ip",
+      "day": "integer",
+      "month": "integer",
+      "request": "text",
+      "size": "integer",
+      "status": "integer",
+      "year": "integer"
+    }
+  },
+  "query": {
+    "language": "ppl",
+    "query": "source = $INDEX | eval c1 = upper(request) | eval c2 = concat('Hello ', if(like(c1, '%bordeaux%'), 'World', clientip)) | eval c3 = length(request) | eval c4 = ltrim(request) | eval c5 = rtrim(request) | eval c6 = substring(clientip, 5, 2) | eval c7 = trim(request) | eval c8 = upper(request) | eval c9 = position('bordeaux' IN request) | eval c10 = replace(request, 'GET', 'GGG') | fields c1, c2, c3, c4, c5, c6, c7, c8, c9, c10 | head 10",
+    "tags": [
+      "command:source",
+      "command:eval",
+      "command:fields",
+      "command:head",
+      "function:upper",
+      "function:concat",
+      "function:if",
+      "function:like",
+      "function:length",
+      "function:ltrim",
+      "function:rtrim",
+      "function:substring",
+      "function:trim",
+      "function:position",
+      "function:replace",
+      "operator:equals",
+      "operator:in"
+    ]
+  }
+}

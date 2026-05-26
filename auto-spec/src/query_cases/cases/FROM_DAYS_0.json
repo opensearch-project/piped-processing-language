@@ -1,0 +1,50 @@
+{
+  "data": {
+    "documents": [
+      {
+        "col_pay": -1341729611
+      },
+      {
+        "col_pay": 875708697
+      },
+      {
+        "col_pay": -1756404605
+      },
+      {
+        "col_pay": -259295797
+      },
+      {
+        "col_pay": -277264742
+      },
+      {
+        "col_pay": 1493159816
+      },
+      {
+        "col_pay": 943049463
+      },
+      {
+        "col_pay": -634624002
+      },
+      {
+        "col_pay": 856612367
+      },
+      {
+        "col_pay": 877762787
+      }
+    ],
+    "mapping": {
+      "col_pay": "integer"
+    }
+  },
+  "query": {
+    "language": "ppl",
+    "query": "source = $INDEX | eval result = from_days(col_pay) | fields result",
+    "tags": [
+      "command:source",
+      "command:eval",
+      "command:fields",
+      "function:from_days",
+      "operator:equals"
+    ]
+  }
+}

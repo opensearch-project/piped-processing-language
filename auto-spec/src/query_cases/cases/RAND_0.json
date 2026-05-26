@@ -1,0 +1,50 @@
+{
+  "data": {
+    "documents": [
+      {
+        "col_improve": 500867891
+      },
+      {
+        "col_improve": -1941777738
+      },
+      {
+        "col_improve": 558655036
+      },
+      {
+        "col_improve": 976915048
+      },
+      {
+        "col_improve": 10670877
+      },
+      {
+        "col_improve": -1132599227
+      },
+      {
+        "col_improve": 104366963
+      },
+      {
+        "col_improve": -1955243095
+      },
+      {
+        "col_improve": 1270131173
+      },
+      {
+        "col_improve": -919689607
+      }
+    ],
+    "mapping": {
+      "col_improve": "integer"
+    }
+  },
+  "query": {
+    "language": "ppl",
+    "query": "source = $INDEX | eval result = rand(col_improve) | fields result",
+    "tags": [
+      "command:source",
+      "command:eval",
+      "command:fields",
+      "function:rand",
+      "operator:equals"
+    ]
+  }
+}

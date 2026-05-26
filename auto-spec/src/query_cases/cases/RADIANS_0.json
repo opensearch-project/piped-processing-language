@@ -1,0 +1,50 @@
+{
+  "data": {
+    "documents": [
+      {
+        "col_subject": -918984940
+      },
+      {
+        "col_subject": -654700197
+      },
+      {
+        "col_subject": -447759770
+      },
+      {
+        "col_subject": 545280317
+      },
+      {
+        "col_subject": 1220022593
+      },
+      {
+        "col_subject": -297704082
+      },
+      {
+        "col_subject": 2119453832
+      },
+      {
+        "col_subject": 1237884468
+      },
+      {
+        "col_subject": 915844228
+      },
+      {
+        "col_subject": 617569822
+      }
+    ],
+    "mapping": {
+      "col_subject": "integer"
+    }
+  },
+  "query": {
+    "language": "ppl",
+    "query": "source = $INDEX | eval result = radians(col_subject) | fields result",
+    "tags": [
+      "command:source",
+      "command:eval",
+      "command:fields",
+      "function:radians",
+      "operator:equals"
+    ]
+  }
+}

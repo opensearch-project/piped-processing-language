@@ -1,0 +1,50 @@
+{
+  "data": {
+    "documents": [
+      {
+        "col_most": -1719870601
+      },
+      {
+        "col_most": -442953390
+      },
+      {
+        "col_most": 1618076123
+      },
+      {
+        "col_most": 1178772835
+      },
+      {
+        "col_most": -2142509694
+      },
+      {
+        "col_most": 1140627462
+      },
+      {
+        "col_most": 801342553
+      },
+      {
+        "col_most": -195179623
+      },
+      {
+        "col_most": -785145700
+      },
+      {
+        "col_most": -199478557
+      }
+    ],
+    "mapping": {
+      "col_most": "integer"
+    }
+  },
+  "query": {
+    "language": "ppl",
+    "query": "source = $INDEX | eval result = degrees(col_most) | fields result",
+    "tags": [
+      "command:source",
+      "command:eval",
+      "command:fields",
+      "function:degrees",
+      "operator:equals"
+    ]
+  }
+}

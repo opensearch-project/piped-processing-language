@@ -1,0 +1,135 @@
+{
+  "data": {
+    "documents": [
+      {
+        "o_clerk": "Clerk#000000951",
+        "o_comment": "nstructions sleep furiously among ",
+        "o_custkey": 37,
+        "o_orderdate": "1996-01-02T00:00:00",
+        "o_orderkey": 1,
+        "o_orderpriority": "5-LOW",
+        "o_orderstatus": "O",
+        "o_shippriority": "0",
+        "o_totalprice": 131251.81
+      },
+      {
+        "o_clerk": "Clerk#000000880",
+        "o_comment": " foxes. pending accounts at the pending, silent asymptot",
+        "o_custkey": 79,
+        "o_orderdate": "1996-12-01T00:00:00",
+        "o_orderkey": 2,
+        "o_orderpriority": "1-URGENT",
+        "o_orderstatus": "O",
+        "o_shippriority": "0",
+        "o_totalprice": 40183.29
+      },
+      {
+        "o_clerk": "Clerk#000000955",
+        "o_comment": "sly final accounts boost. carefully regular ideas cajole carefully. depos",
+        "o_custkey": 124,
+        "o_orderdate": "1993-10-14T00:00:00",
+        "o_orderkey": 3,
+        "o_orderpriority": "5-LOW",
+        "o_orderstatus": "F",
+        "o_shippriority": "0",
+        "o_totalprice": 160882.76
+      },
+      {
+        "o_clerk": "Clerk#000000124",
+        "o_comment": "sits. slyly regular warthogs cajole. regular, regular theodolites acro",
+        "o_custkey": 137,
+        "o_orderdate": "1995-10-11T00:00:00",
+        "o_orderkey": 4,
+        "o_orderpriority": "5-LOW",
+        "o_orderstatus": "O",
+        "o_shippriority": "0",
+        "o_totalprice": 31084.79
+      },
+      {
+        "o_clerk": "Clerk#000000925",
+        "o_comment": "quickly. bold deposits sleep slyly. packages use slyly",
+        "o_custkey": 46,
+        "o_orderdate": "1994-07-30T00:00:00",
+        "o_orderkey": 5,
+        "o_orderpriority": "5-LOW",
+        "o_orderstatus": "F",
+        "o_shippriority": "0",
+        "o_totalprice": 86615.25
+      },
+      {
+        "o_clerk": "Clerk#000000058",
+        "o_comment": "ggle. special, final requests are against the furiously specia",
+        "o_custkey": 56,
+        "o_orderdate": "1992-02-21T00:00:00",
+        "o_orderkey": 6,
+        "o_orderpriority": "4-NOT SPECIFIED",
+        "o_orderstatus": "F",
+        "o_shippriority": "0",
+        "o_totalprice": 36468.55
+      },
+      {
+        "o_clerk": "Clerk#000000470",
+        "o_comment": "ly special requests ",
+        "o_custkey": 40,
+        "o_orderdate": "1996-01-10T00:00:00",
+        "o_orderkey": 7,
+        "o_orderpriority": "2-HIGH",
+        "o_orderstatus": "O",
+        "o_shippriority": "0",
+        "o_totalprice": 171488.73
+      },
+      {
+        "o_clerk": "Clerk#000000616",
+        "o_comment": "ise blithely bold, regular requests. quickly unusual dep",
+        "o_custkey": 131,
+        "o_orderdate": "1995-07-16T00:00:00",
+        "o_orderkey": 32,
+        "o_orderpriority": "2-HIGH",
+        "o_orderstatus": "O",
+        "o_shippriority": "0",
+        "o_totalprice": 116923.0
+      },
+      {
+        "o_clerk": "Clerk#000000409",
+        "o_comment": "uriously. furiously final request",
+        "o_custkey": 67,
+        "o_orderdate": "1993-10-27T00:00:00",
+        "o_orderkey": 33,
+        "o_orderpriority": "3-MEDIUM",
+        "o_orderstatus": "F",
+        "o_shippriority": "0",
+        "o_totalprice": 99798.76
+      },
+      {
+        "o_clerk": "Clerk#000000223",
+        "o_comment": "ly final packages. fluffily final deposits wake blithely ideas. spe",
+        "o_custkey": 62,
+        "o_orderdate": "1998-07-21T00:00:00",
+        "o_orderkey": 34,
+        "o_orderpriority": "3-MEDIUM",
+        "o_orderstatus": "O",
+        "o_shippriority": "0",
+        "o_totalprice": 41670.02
+      }
+    ],
+    "mapping": {
+      "o_clerk": "text",
+      "o_comment": "text",
+      "o_custkey": "integer",
+      "o_orderdate": "date",
+      "o_orderkey": "integer",
+      "o_orderpriority": "text",
+      "o_orderstatus": "text",
+      "o_shippriority": "text",
+      "o_totalprice": "double"
+    }
+  },
+  "query": {
+    "language": "ppl",
+    "query": "source = $INDEX | head 1",
+    "tags": [
+      "command:source",
+      "command:head"
+    ]
+  }
+}

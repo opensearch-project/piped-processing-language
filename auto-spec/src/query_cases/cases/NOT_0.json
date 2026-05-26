@@ -1,0 +1,50 @@
+{
+  "data": {
+    "documents": [
+      {
+        "col_use": false
+      },
+      {
+        "col_use": false
+      },
+      {
+        "col_use": true
+      },
+      {
+        "col_use": true
+      },
+      {
+        "col_use": true
+      },
+      {
+        "col_use": false
+      },
+      {
+        "col_use": true
+      },
+      {
+        "col_use": false
+      },
+      {
+        "col_use": false
+      },
+      {
+        "col_use": true
+      }
+    ],
+    "mapping": {
+      "col_use": "boolean"
+    }
+  },
+  "query": {
+    "language": "ppl",
+    "query": "source = $INDEX | eval result = not(col_use) | fields result",
+    "tags": [
+      "command:source",
+      "command:eval",
+      "command:fields",
+      "function:not",
+      "operator:equals"
+    ]
+  }
+}

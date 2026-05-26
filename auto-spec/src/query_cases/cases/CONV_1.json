@@ -1,0 +1,72 @@
+{
+  "data": {
+    "documents": [
+      {
+        "col_social": -162354912,
+        "col_turn": -810037951,
+        "col_what": 1960624446
+      },
+      {
+        "col_social": 1726570714,
+        "col_turn": -251782161,
+        "col_what": 1596160112
+      },
+      {
+        "col_social": 165246887,
+        "col_turn": -1599542868,
+        "col_what": -2124918013
+      },
+      {
+        "col_social": -1537623882,
+        "col_turn": -2029264887,
+        "col_what": -986631210
+      },
+      {
+        "col_social": -1587949127,
+        "col_turn": 730638123,
+        "col_what": -523452150
+      },
+      {
+        "col_social": -971450226,
+        "col_turn": 1353317621,
+        "col_what": -379846312
+      },
+      {
+        "col_social": -135039802,
+        "col_turn": -1587576635,
+        "col_what": 1596263635
+      },
+      {
+        "col_social": -339212588,
+        "col_turn": 762895479,
+        "col_what": -973672872
+      },
+      {
+        "col_social": 1084139142,
+        "col_turn": 2125061314,
+        "col_what": -902049003
+      },
+      {
+        "col_social": -1068761221,
+        "col_turn": -523479991,
+        "col_what": 322489466
+      }
+    ],
+    "mapping": {
+      "col_social": "integer",
+      "col_turn": "integer",
+      "col_what": "integer"
+    }
+  },
+  "query": {
+    "language": "ppl",
+    "query": "source = $INDEX | eval result = conv(col_turn, col_what, col_social) | fields result",
+    "tags": [
+      "command:source",
+      "command:eval",
+      "command:fields",
+      "function:conv",
+      "operator:equals"
+    ]
+  }
+}

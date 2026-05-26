@@ -1,0 +1,50 @@
+{
+  "data": {
+    "documents": [
+      {
+        "col_data": 640081158
+      },
+      {
+        "col_data": -686263297
+      },
+      {
+        "col_data": -1814689924
+      },
+      {
+        "col_data": 2019216257
+      },
+      {
+        "col_data": -1234711295
+      },
+      {
+        "col_data": -1773164832
+      },
+      {
+        "col_data": -103140803
+      },
+      {
+        "col_data": -81759980
+      },
+      {
+        "col_data": 2100298980
+      },
+      {
+        "col_data": -2076562988
+      }
+    ],
+    "mapping": {
+      "col_data": "integer"
+    }
+  },
+  "query": {
+    "language": "ppl",
+    "query": "source = $INDEX | eval result = cot(col_data) | fields result",
+    "tags": [
+      "command:source",
+      "command:eval",
+      "command:fields",
+      "function:cot",
+      "operator:equals"
+    ]
+  }
+}

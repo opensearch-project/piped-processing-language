@@ -1,0 +1,61 @@
+{
+  "data": {
+    "documents": [
+      {
+        "col_perhaps": 1628051868,
+        "col_protect": -497705784
+      },
+      {
+        "col_perhaps": 1824339714,
+        "col_protect": -1457881764
+      },
+      {
+        "col_perhaps": 1518552556,
+        "col_protect": -1739428022
+      },
+      {
+        "col_perhaps": 137916785,
+        "col_protect": 1503531925
+      },
+      {
+        "col_perhaps": 42483652,
+        "col_protect": 1386743788
+      },
+      {
+        "col_perhaps": -458653600,
+        "col_protect": -834093765
+      },
+      {
+        "col_perhaps": -1689172294,
+        "col_protect": -1600869673
+      },
+      {
+        "col_perhaps": 414351148,
+        "col_protect": 440604303
+      },
+      {
+        "col_perhaps": -1666713696,
+        "col_protect": -1110386400
+      },
+      {
+        "col_perhaps": 1080482253,
+        "col_protect": 2079874951
+      }
+    ],
+    "mapping": {
+      "col_perhaps": "integer",
+      "col_protect": "integer"
+    }
+  },
+  "query": {
+    "language": "ppl",
+    "query": "source = $INDEX | eval result = modulus(col_protect, col_perhaps) | fields result",
+    "tags": [
+      "command:source",
+      "command:eval",
+      "command:fields",
+      "function:modulus",
+      "operator:equals"
+    ]
+  }
+}

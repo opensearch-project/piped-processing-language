@@ -1,0 +1,50 @@
+{
+  "data": {
+    "documents": [
+      {
+        "col_president": 952839284
+      },
+      {
+        "col_president": 1294276761
+      },
+      {
+        "col_president": 1896869794
+      },
+      {
+        "col_president": -1995227618
+      },
+      {
+        "col_president": 168108822
+      },
+      {
+        "col_president": -1021367450
+      },
+      {
+        "col_president": 1942428027
+      },
+      {
+        "col_president": 803193720
+      },
+      {
+        "col_president": 294341517
+      },
+      {
+        "col_president": 264626170
+      }
+    ],
+    "mapping": {
+      "col_president": "integer"
+    }
+  },
+  "query": {
+    "language": "ppl",
+    "query": "source = $INDEX | eval result = cos(col_president) | fields result",
+    "tags": [
+      "command:source",
+      "command:eval",
+      "command:fields",
+      "function:cos",
+      "operator:equals"
+    ]
+  }
+}

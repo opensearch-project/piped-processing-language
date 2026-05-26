@@ -1,0 +1,73 @@
+{
+  "data": {
+    "documents": [
+      {
+        "@timestamp": "2024-06-15T13:40:23",
+        "country": "England",
+        "id": 1000,
+        "name": "Jake",
+        "occupation": "Engineer",
+        "salary": 100000
+      },
+      {
+        "@timestamp": "2024-06-15T13:40:33",
+        "country": "USA",
+        "id": 1001,
+        "name": "Hello",
+        "occupation": "Artist",
+        "salary": 70000
+      },
+      {
+        "@timestamp": "2024-06-15T13:40:43",
+        "country": "Canada",
+        "id": 1002,
+        "name": "John",
+        "occupation": "Doctor",
+        "salary": 120000
+      },
+      {
+        "@timestamp": "2024-06-15T13:40:53",
+        "country": null,
+        "id": 1003,
+        "name": "David",
+        "occupation": "Doctor",
+        "salary": 120000
+      },
+      {
+        "@timestamp": "2024-06-15T13:41:03",
+        "country": "Canada",
+        "id": 1004,
+        "name": "David",
+        "occupation": null,
+        "salary": 0
+      },
+      {
+        "@timestamp": "2024-06-15T13:41:13",
+        "country": "Canada",
+        "id": 1005,
+        "name": "Jane",
+        "occupation": "Scientist",
+        "salary": 90000
+      }
+    ],
+    "mapping": {
+      "@timestamp": "date",
+      "country": "text",
+      "id": "integer",
+      "name": "text",
+      "occupation": "text",
+      "salary": "integer"
+    }
+  },
+  "query": {
+    "language": "ppl",
+    "query": "source=$INDEX  | eval `CURRENT_TIMEZONE()` = CURRENT_TIMEZONE() | fields `CURRENT_TIMEZONE()`",
+    "tags": [
+      "command:source",
+      "command:eval",
+      "command:fields",
+      "function:current_timezone",
+      "operator:equals"
+    ]
+  }
+}

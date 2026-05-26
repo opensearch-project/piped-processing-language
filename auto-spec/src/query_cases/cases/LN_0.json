@@ -1,0 +1,50 @@
+{
+  "data": {
+    "documents": [
+      {
+        "col_partner": 1676798905
+      },
+      {
+        "col_partner": 1290501947
+      },
+      {
+        "col_partner": 1253662604
+      },
+      {
+        "col_partner": 1498293832
+      },
+      {
+        "col_partner": 642595460
+      },
+      {
+        "col_partner": 784005340
+      },
+      {
+        "col_partner": -485846642
+      },
+      {
+        "col_partner": 1651276580
+      },
+      {
+        "col_partner": -2124091144
+      },
+      {
+        "col_partner": -1738808736
+      }
+    ],
+    "mapping": {
+      "col_partner": "integer"
+    }
+  },
+  "query": {
+    "language": "ppl",
+    "query": "source = $INDEX | eval result = ln(col_partner) | fields result",
+    "tags": [
+      "command:source",
+      "command:eval",
+      "command:fields",
+      "function:ln",
+      "operator:equals"
+    ]
+  }
+}

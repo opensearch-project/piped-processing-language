@@ -1,0 +1,50 @@
+{
+  "data": {
+    "documents": [
+      {
+        "col_too": 865216781
+      },
+      {
+        "col_too": -809803496
+      },
+      {
+        "col_too": 807351424
+      },
+      {
+        "col_too": 325054437
+      },
+      {
+        "col_too": -927859979
+      },
+      {
+        "col_too": -1764748951
+      },
+      {
+        "col_too": 1894146224
+      },
+      {
+        "col_too": -216863755
+      },
+      {
+        "col_too": -849041506
+      },
+      {
+        "col_too": 83059000
+      }
+    ],
+    "mapping": {
+      "col_too": "integer"
+    }
+  },
+  "query": {
+    "language": "ppl",
+    "query": "source = $INDEX | eval result = sqrt(col_too) | fields result",
+    "tags": [
+      "command:source",
+      "command:eval",
+      "command:fields",
+      "function:sqrt",
+      "operator:equals"
+    ]
+  }
+}

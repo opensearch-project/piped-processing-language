@@ -1,0 +1,25 @@
+{
+  "data": {
+    "documents": [
+      {
+        "id": 1,
+        "name": "Foo"
+      },
+      {
+        "id": 2,
+        "name": "Bar"
+      }
+    ],
+    "mapping": {
+      "id": "integer",
+      "name": "text"
+    }
+  },
+  "query": {
+    "language": "ppl",
+    "query": "SOURCE=$INDEX",
+    "tags": [
+      "command:source"
+    ]
+  }
+}

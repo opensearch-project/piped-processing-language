@@ -1,0 +1,50 @@
+{
+  "data": {
+    "documents": [
+      {
+        "col_just": -1551663957
+      },
+      {
+        "col_just": 1700286695
+      },
+      {
+        "col_just": 2021351620
+      },
+      {
+        "col_just": -2036436852
+      },
+      {
+        "col_just": 1594839125
+      },
+      {
+        "col_just": 456951761
+      },
+      {
+        "col_just": 1373857573
+      },
+      {
+        "col_just": -547180380
+      },
+      {
+        "col_just": -1831507587
+      },
+      {
+        "col_just": 328264137
+      }
+    ],
+    "mapping": {
+      "col_just": "integer"
+    }
+  },
+  "query": {
+    "language": "ppl",
+    "query": "source = $INDEX | eval result = to_seconds(col_just) | fields result",
+    "tags": [
+      "command:source",
+      "command:eval",
+      "command:fields",
+      "function:to_seconds",
+      "operator:equals"
+    ]
+  }
+}
